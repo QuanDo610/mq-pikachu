@@ -1,0 +1,17 @@
+/* File: assets/css/variables.css */
+
+:root {
+    --color-primary: #a3624b;
+    --color-secondary: #7E9FB2;
+    --color-accent: #3f5f76;
+    --color-bg: #C4B9B3;
+    --color-white: #ffffff;
+    --color-dark: #1e1e1e;
+
+    --color-primary-light: #c67b52;
+    --color-secondary-dark: #3a7393;
+    /* Màu gradient nếu dùng animation */
+    --gradient-primary: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+    --gradient-accent: linear-gradient(to right, var(--color-accent), var(--color-primary));
+    --gradient-hero: linear-gradient(180deg, var(--color-accent), var(--color-primary));
+}
