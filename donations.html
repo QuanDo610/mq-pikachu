@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQ Pikachu - Ủng hộ</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/donations.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container text-center">
+            <h1 class="mb-3">Ủng hộ MQ Pikachu</h1>
+            <p style="max-width: 600px; margin: 0 auto;">
+                Mỗi đóng góp của bạn là nguồn động lực lớn để MQ Pikachu tiếp tục chia sẻ kiến thức và hỗ trợ cộng đồng.
+                Cảm ơn bạn đã đồng hành cùng chúng tôi! ❤️
+            </p>
+        </div>
+    </section>
+
+    <!-- Donations Section -->
+    <section class="donations py-5">
+        <div class="container">
+            <!-- QR Code Donations -->
+            <h3 class="text-center mb-4" style="color: var(--color-accent);">Ủng hộ qua QR Code</h3>
+            <div class="row mb-5">
+                <div class="col-md-4 mb-4">
+                    <div class="card donation-card">
+                        <div class="card-body text-center">
+                            <img src="assets/img/qr/qr-momo.jpg" alt="QR Momo" class="qr-code mb-3"
+                                style="max-width: 150px;">
+                            <h6 class="card-title">Momo</h6>
+                            <p class="card-text">Số điện thoại: 0973807027</p>
+                            <button class="btn btn-primary btn-sm" onclick="copyToClipboard('0973807027')">Sao
+                                chép</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card donation-card">
+                        <div class="card-body text-center">
+                            <img src="assets/img/qr/qr-ttt.jpg" alt="QR Túi Thần Tài" class="qr-code mb-3"
+                                style="max-width: 150px;">
+                            <h6 class="card-title">Túi Thần Tài</h6>
+                            <p class="card-text">Số tài khoản: 0973807027</p>
+                            <button class="btn btn-primary btn-sm" onclick="copyToClipboard('0973807027')">Sao
+                                chép</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card donation-card">
+                        <div class="card-body text-center">
+                            <img src="assets/img/qr/qr-tpbank.jpg" alt="QR TPBank" class="qr-code mb-3"
+                                style="max-width: 150px;">
+                            <h6 class="card-title">TPBank</h6>
+                            <p class="card-text">Số tài khoản: 1234567890</p>
+                            <button class="btn btn-primary btn-sm" onclick="copyToClipboard('1234567890')">Sao
+                                chép</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Crypto Donations -->
+            <h3 class="text-center mb-4" style="color: var(--color-accent);">Ủng hộ qua Crypto</h3>
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-4">
+                    <div class="mb-3">
+                        <label for="coinSelect" class="form-label">Chọn Coin:</label>
+                        <select id="coinSelect" class="form-select" onchange="showCryptoDetails()">
+                            <option value="vndc" selected>VNDC (OFFCHAIN)</option>
+                            <option value="usdt">USDT (TRC20)</option>
+                            <option value="btc">BTC (Bitcoin)</option>
+                            <option value="eth">ETH (Ethereum)</option>
+                            <option value="sol">SOL (Solana)</option>
+                            <option value="trx">TRX (Tron)</option>
+                        </select>
+                    </div>
+                    <div class="card donation-card" id="cryptoDetails">
+                        <div class="card-body text-center">
+                            <img id="cryptoQr" src="assets/img/qr/crypto/vndc.png" alt="QR VNDC" class="qr-code mb-3"
+                                style="max-width: 150px;">
+                            <h6 id="cryptoTitle" class="card-title">VNDC (OFF-CHAIN)</h6>
+                            <p id="cryptoAddress" class="card-text crypto-address" style="word-break: break-all;">
+                                Đỗ Trọng Minh Quân</p>
+                            <button class="btn btn-primary btn-sm" onclick="copyCryptoAddress()">Sao chép</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Load header
+        fetch('components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+
+        // Copy to clipboard function for QR
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Đã sao chép: ' + text);
+            });
+        }
+
+        // Crypto details data
+        const cryptoData = {
+            vndc: {
+                title: "VNDC (OFFCHAIN)",
+                qr: "assets/img/qr/crypto/vndc.png",
+                address: "0973807027"
+            },
+            usdt: {
+                title: "USDT (TRC20)",
+                qr: "assets/img/qr/crypto/usdt.png",
+                address: "TW6B8Bt5gZFE3TjFNaYGcPynUKKWPUCXLK"
+            },
+            btc: {
+                title: "BTC (Bitcoin)",
+                qr: "assets/img/qr/crypto/btc.png",
+                address: "3QK7crQCEctZ25NxVeuEqgpj2uCugAt36s"
+            },
+            eth: {
+                title: "ETH (Ethereum)",
+                qr: "assets/img/qr/crypto/eth.png",
+                address: "0x7F8cEa92cEe287C5C05C1ec59deA3dCeBC01e63C"
+            },
+            sol: {
+                title: "SOL (Solana)",
+                qr: "assets/img/qr/crypto/sol.png",
+                address: "5fvUCBxEMRiCmUSy4yLqgRQgzUqmUZWbFqaUVq8Lw8Jo"
+            },
+            trx: {
+                title: "TRX (Tron)",
+                qr: "assets/img/qr/crypto/trx.png",
+                address: "TW6B8Bt5gZFE3TjFNaYGcPynUKKWPUCXLK"
+            }
+        };
+
+        // Show crypto details based on selected coin
+        function showCryptoDetails() {
+            const coin = document.getElementById("coinSelect").value;
+            const data = cryptoData[coin];
+            document.getElementById("cryptoQr").src = data.qr;
+            document.getElementById("cryptoTitle").textContent = data.title;
+            document.getElementById("cryptoAddress").textContent = data.address;
+        }
+
+        // Copy crypto address to clipboard
+        function copyCryptoAddress() {
+            const address = document.getElementById("cryptoAddress").textContent;
+            navigator.clipboard.writeText(address).then(() => {
+                alert('Đã sao chép: ' + address);
+            });
+        }
+    </script>
+</body>
+
+</html>

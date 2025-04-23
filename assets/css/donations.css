@@ -1,0 +1,148 @@
+/* Hero Section */
+.hero {
+    background: var(--gradient-hero);
+    /* Gradient từ xanh nhạt đến xanh đậm */
+    color: var(--color-white);
+    min-height: 50vh;
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Donations Section */
+.donations {
+    background-color: var(--color-white);
+    /* Trắng, sạch */
+    padding: 4rem 0;
+}
+
+.donations h3 {
+    font-size: 1.75rem;
+}
+
+.donation-card {
+    border: 6px solid var(--color-bg);
+    /* background-color: var(--color-bg); */
+    /* Nâu be, Thổ */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.donation-card .qr-code {
+    min-width: 200px;
+    max-width: 250px;
+}
+
+.donation-card .card-title {
+    color: var(--color-accent);
+    /* Xanh đậm, Thủy */
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.donation-card .card-text {
+    color: var(--color-dark);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.donation-card .crypto-address {
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+.donation-card .btn-primary {
+    background-color: var(--color-accent);
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.donation-card .btn-primary:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 50vh;
+        padding: 3rem 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .donations {
+        padding: 3rem 0;
+    }
+
+    .donations h3 {
+        font-size: 1.5rem;
+    }
+
+    .donations .qr-code {
+        max-width: 120px;
+    }
+
+    .donation-card {
+        padding: 1rem;
+    }
+
+    .donation-card .card-title {
+        font-size: 1.1rem;
+    }
+
+    .donation-card .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        min-height: 40vh;
+        padding: 2rem 0;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .donations {
+        padding: 2rem 0;
+    }
+
+    .donations h3 {
+        font-size: 1.25rem;
+    }
+
+    .donation-card {
+        margin-bottom: 1.5rem;
+    }
+}
