@@ -2,6 +2,7 @@
 .header {
     background-color: var(--color-white);
     transition: all 0.3s ease;
+    border-bottom: 1px dashed var(--color-dark);
 }
 
 .navbar {

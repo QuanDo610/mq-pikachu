@@ -1,0 +1,110 @@
+/* Guide Section */
+.guide {
+    background-color: var(--color-white);
+    /* Trắng, sạch */
+    padding: 12rem 0 4rem 0;
+    /* Tăng padding-top để tránh bị header che và thêm khoảng cách đẹp */
+}
+
+.guide h2 {
+    font-size: 2.5rem;
+    color: var(--color-dark);
+    margin-bottom: 2rem;
+}
+
+.guide .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.guide .col-md-4 {
+    display: flex;
+    /* Để card bên trong có thể chiếm toàn bộ chiều cao */
+}
+
+.guide-card {
+    border: none;
+    background-color: var(--color-bg);
+    /* Nâu be, Thổ */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    /* Đảm bảo card chiếm toàn bộ chiều rộng của col */
+    height: 100%;
+    /* Đảm bảo card có chiều cao bằng nhau */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Căn đều nội dung bên trong card */
+}
+
+.guide-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.guide-card .card-title {
+    color: var(--color-accent);
+    /* Xanh đậm, Thủy */
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.guide-card .card-text {
+    color: var(--color-dark);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+    /* Đảm bảo phần text chiếm không gian còn lại */
+}
+
+.guide-card .btn-primary {
+    background-color: var(--color-accent);
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.guide-card .btn-primary:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .guide {
+        padding: 11rem 0 3rem 0;
+        /* Giảm padding-top trên tablet */
+    }
+
+    .guide h2 {
+        font-size: 2rem;
+    }
+
+    .guide-card {
+        padding: 1rem;
+    }
+
+    .guide-card .card-title {
+        font-size: 1.1rem;
+    }
+
+    .guide-card .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .guide {
+        padding: 10rem 0 2rem 0;
+        /* Giảm padding-top trên mobile */
+    }
+
+    .guide h2 {
+        font-size: 1.75rem;
+    }
+
+    .guide-card {
+        margin-bottom: 1.5rem;
+    }
+}

@@ -1,0 +1,151 @@
+/* Guide Section */
+.guide {
+    background-color: var(--color-white);
+    /* Trắng, sạch */
+    padding: 12rem 0 4rem 0;
+    /* Tăng padding-top để tránh bị header che */
+}
+
+/* Step Section */
+.step-section {
+    background-color: var(--color-bg);
+    /* Nâu be, Thổ */
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.step-title {
+    color: var(--color-accent);
+    /* Xanh đậm, Thủy */
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.step-text {
+    color: var(--color-dark);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Download Buttons */
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn-store {
+    background-color: var(--color-accent);
+    /* Xanh đậm, Thủy */
+    color: var(--color-white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+    /* Chỉ transition cho transform */
+}
+
+.btn-store:hover {
+    transform: translateY(-3px);
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    /* Nhích lên 3px */
+}
+
+.btn-store i {
+    margin-right: 0.5rem;
+}
+
+/* Step List */
+.step-list {
+    color: var(--color-dark);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.step-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* Illustration Gallery */
+.illustration-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.illustration-gallery img {
+    /* max-width: 300px; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .guide {
+        padding: 11rem 0 3rem 0;
+        /* Giảm padding-top trên tablet */
+    }
+
+    .step-title {
+        font-size: 1.3rem;
+    }
+
+    .step-text,
+    .step-list {
+        font-size: 0.9rem;
+    }
+
+    .btn-store {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .illustration-gallery img {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+    .guide {
+        padding: 10rem 0 2rem 0;
+        /* Giảm padding-top trên mobile */
+    }
+
+    .step-section {
+        padding: 1.5rem;
+    }
+
+    .step-title {
+        font-size: 1.2rem;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .btn-store {
+        width: 100%;
+        text-align: center;
+    }
+
+    .illustration-gallery img {
+        max-width: 100%;
+    }
+}
+
+.magioithieu {
+    text-decoration: underline;
+    cursor: pointer;
+}

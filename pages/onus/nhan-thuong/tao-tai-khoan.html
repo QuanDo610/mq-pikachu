@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQ Pikachu - Tạo Tài Khoản ONUS</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../../assets/css/variables.css">
+    <link rel="stylesheet" href="../../../assets/css/main.css">
+    <link rel="stylesheet" href="../../../assets/css/header.css">
+    <link rel="stylesheet" href="../../../assets/css/footer.css">
+    <link rel="stylesheet" href="../../../assets/css/tao-tai-khoan.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Guide Section -->
+    <section class="guide" id="guide-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Tạo Tài Khoản ONUS</h2>
+            <div class="row">
+                <!-- Bước 1: Tải App ONUS -->
+                <div class="col-12 mb-5">
+                    <div class="step-section">
+                        <h3 class="step-title">Bước 1: Tải App ONUS</h3>
+                        <p class="step-text">
+                            Tải ứng dụng ONUS từ App Store hoặc Google Play để bắt đầu.
+                        </p>
+                        <div class="download-buttons">
+                            <a href="https://apps.apple.com/vn/app/onus-buy-bitcoin-pi-crypto/id1498452975/"
+                                target="_blank" class="btn btn-store btn-app-store me-3">
+                                <i class="bi bi-apple"></i> App Store
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.vndc" target="_blank"
+                                class="btn btn-store btn-google-play">
+                                <i class="bi bi-google-play"></i> Google Play
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bước 2: Tạo Tài Khoản -->
+                <div class="col-12">
+                    <div class="step-section">
+                        <h3 class="step-title">Bước 2: Tạo Tài Khoản</h3>
+                        <ol class="step-list">
+                            <li>Mở ứng dụng ONUS và chọn <strong>Đăng ký</strong>.</li>
+                            <li>Nhập số điện thoại của bạn và xác minh mã OTP được gửi qua SMS.</li>
+                            <li>Tạo mật khẩu cho tài khoản của bạn.</li>
+                            <li onclick="copyToClipboard('8478503305')">Nhập mã giới thiệu: <strong
+                                    class="magioithieu">8478503305</strong>
+                                ( Để nhận
+                                thêm ưu đãi ).</li>
+                            <li>Hoàn tất đăng ký và bắt đầu sử dụng ONUS!</li>
+                        </ol>
+                        <!-- Placeholder cho hình minh họa -->
+                        <div class="illustration-gallery">
+                            <img src="/assets/img/onus/register.png" alt="Tạo tài khoản ONUS" class="img-fluid mb-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../../../assets/js/main.js"></script>
+    <script>
+        // Load header and footer, then calculate padding
+        Promise.all([
+            fetch('../../../components/header.html').then(response => response.text()),
+            fetch('../../../components/footer.html').then(response => response.text())
+        ])
+            .then(([headerData, footerData]) => {
+                // Insert header and footer
+                document.getElementById('header-placeholder').innerHTML = headerData;
+                document.getElementById('footer-placeholder').innerHTML = footerData;
+
+                // Calculate padding after header is loaded
+                const header = document.querySelector('.header');
+                const guideSection = document.querySelector('#guide-section');
+                if (header && guideSection) {
+                    const headerHeight = header.offsetHeight;
+                    guideSection.style.paddingTop = `${headerHeight + 50}px`;
+                }
+            })
+            .catch(error => {
+                console.error('Error loading header/footer:', error);
+            });
+
+        // Copy to clipboard function for Referal
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Đã sao chép: ' + text);
+            });
+        }
+
+        // Update padding on resize
+        window.addEventListener('resize', function () {
+            const header = document.querySelector('.header');
+            const guideSection = document.querySelector('#guide-section');
+            if (header && guideSection) {
+                const headerHeight = header.offsetHeight;
+                guideSection.style.paddingTop = `${headerHeight + 50}px`;
+            }
+        });
+    </script>
+</body>
+
+</html>

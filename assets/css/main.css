@@ -1,0 +1,31 @@
+/* Ensure the page takes up at least the full viewport height */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content should take up remaining space */
+main {
+    flex: 1 0 auto;
+}
+
+/* Footer should stick to the bottom */
+footer {
+    flex-shrink: 0;
+}
+
+/* Transition effect for hover animations */
+.transition {
+    transition: all 0.3s ease-in-out;
+}
+
+.transition:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
