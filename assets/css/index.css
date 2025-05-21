@@ -95,6 +95,10 @@
     background-color: var(--color-white);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    /* Đảm bảo card không vượt quá container cha */
+    max-width: 100%;
+    /* Giới hạn chiều rộng tối đa */
 }
 
 .community-card:hover {
@@ -110,6 +114,8 @@
 
 .community-card .qr-code {
     max-width: 150px;
+    width: 100%;
+    /* Đảm bảo hình không vượt quá container */
 }
 
 .community-card .btn-primary {
@@ -136,7 +142,6 @@
 /* Testimonials Section */
 .testimonials {
     background-color: var(--color-white);
-    /* Trắng, sạch */
     padding: 4rem 0;
 }
 
@@ -149,7 +154,6 @@
 .testimonial-card {
     border: none;
     background-color: var(--color-bg);
-    /* Nâu be, Thổ */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding: 1.5rem;
@@ -158,7 +162,6 @@
 
 .testimonial-card img {
     border-radius: 10px;
-    /* Bo góc nhẹ, không oval */
 }
 
 .testimonial-card .rating {
@@ -178,7 +181,6 @@
 
 .testimonial-card .card-title {
     color: var(--color-accent);
-    /* Xanh đậm, Thủy */
     font-size: 1.2rem;
     font-weight: 600;
 }
@@ -233,6 +235,16 @@
 
     .community-card .qr-code {
         max-width: 120px;
+        width: 100%;
+        /* Đảm bảo hình không vượt quá container */
+    }
+
+    .community-card .d-flex {
+        flex-wrap: wrap;
+        /* Cho phép xuống hàng nếu nội dung quá rộng */
+        justify-content: center;
+        gap: 0.5rem;
+        /* Thêm khoảng cách giữa icon và hình */
     }
 
     .testimonials h2 {
@@ -279,6 +291,11 @@
     .community-card,
     .testimonial-card {
         margin-bottom: 1.5rem;
+    }
+
+    .community-card .qr-code {
+        max-width: 100px;
+        width: 100%;
     }
 
     .testimonials h2 {
