@@ -5,11 +5,6 @@ body {
     margin: 0;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-}
-
 /* Main content should take up remaining space */
 main {
     flex: 1 0 auto;
@@ -28,4 +23,353 @@ footer {
 .transition:hover {
     transform: scale(1.03);
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Hero Section */
+.hero {
+    background: var(--gradient-hero);
+    color: var(--color-white);
+    min-height: 70vh;
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+.hero .btn-primary {
+    background-color: var(--color-accent);
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Donations Section */
+.donations {
+    background-color: var(--color-white);
+    padding: 4rem 0;
+}
+
+.donations h3 {
+    font-size: 1.75rem;
+}
+
+.donation-card {
+    border: 6px solid var(--color-bg);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.donation-card .qr-code {
+    min-width: 200px;
+    max-width: 250px;
+}
+
+.donation-card .card-title {
+    color: var(--color-accent);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.donation-card .card-text {
+    color: var(--color-dark);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.donation-card .crypto-address {
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+.donation-card .btn-primary {
+    background-color: var(--color-accent);
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.donation-card .btn-primary:hover {
+    transform: scale(1.05);
+}
+
+/* Team Section */
+.team {
+    padding: 4rem 0;
+}
+
+.team h2 {
+    font-size: 2.5rem;
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+}
+
+.team p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--color-dark);
+}
+
+.team-card {
+    border: none;
+    background-color: var(--color-white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-card .card-title {
+    color: var(--color-accent);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-card .card-text {
+    color: var(--color-dark);
+    font-size: 1rem;
+}
+
+/* Community Section */
+.community {
+    background-color: var(--color-bg);
+    padding: 4rem 0;
+}
+
+.community h2 {
+    font-size: 2.5rem;
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+}
+
+.community p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--color-dark);
+}
+
+.community-card {
+    border: none;
+    background-color: var(--color-white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 100%;
+}
+
+.community-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.community-card .card-title {
+    color: var(--color-accent);
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.community-card .qr-code {
+    max-width: 150px;
+    width: 100%;
+}
+
+.community-card .btn-primary {
+    background-color: var(--color-accent);
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.community-card .btn-primary:hover {
+    transform: scale(1.05);
+}
+
+.community-card .btn-outline-primary {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.community-card .btn-outline-primary:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: var(--color-white);
+    padding: 4rem 0;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    color: var(--color-dark);
+    margin-bottom: 2rem;
+}
+
+.testimonial-card {
+    border: none;
+    background-color: var(--color-bg);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.testimonial-card img {
+    border-radius: 10px;
+}
+
+.testimonial-card .rating {
+    font-size: 1.1rem;
+}
+
+.testimonial-card .rating i {
+    margin: 0 2px;
+}
+
+.testimonial-card .card-text {
+    color: var(--color-dark);
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card .card-title {
+    color: var(--color-accent);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* CTA Section */
+.cta {
+    background: var(--gradient-accent);
+    color: var(--color-white);
+    padding: 4rem 0;
+}
+
+.cta h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.cta p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+.cta .btn-primary {
+    background-color: var(--color-accent);
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta .btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .donations,
+    .team,
+    .community,
+    .testimonials,
+    .cta {
+        padding: 3rem 0;
+    }
+
+    .donations h3,
+    .team h2,
+    .community h2,
+    .testimonials h2,
+    .cta h3 {
+        font-size: 1.5rem;
+    }
+
+    .donation-card {
+        padding: 1rem;
+    }
+
+    .donation-card .qr-code,
+    .community-card .qr-code {
+        max-width: 120px;
+    }
+
+    .testimonial-card {
+        padding: 1rem;
+    }
+
+    .testimonial-card img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .testimonial-card .rating {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 2rem 0;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .donations,
+    .team,
+    .community,
+    .testimonials,
+    .cta {
+        padding: 2rem 0;
+    }
+
+    .donation-card {
+        margin-bottom: 1.5rem;
+    }
 }

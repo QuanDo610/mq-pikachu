@@ -1,110 +1,74 @@
-/* Guide Section */
-.guide {
-    background-color: var(--color-white);
-    /* Trắng, sạch */
-    padding: 12rem 0 4rem 0;
-    /* Tăng padding-top để tránh bị header che và thêm khoảng cách đẹp */
-}
-
-.guide h2 {
-    font-size: 2.5rem;
-    color: var(--color-dark);
-    margin-bottom: 2rem;
-}
-
-.guide .row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.guide .col-md-4 {
-    display: flex;
-    /* Để card bên trong có thể chiếm toàn bộ chiều cao */
-}
-
-.guide-card {
-    border: none;
-    background-color: var(--color-bg);
-    /* Nâu be, Thổ */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    padding: 1.5rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
-    /* Đảm bảo card chiếm toàn bộ chiều rộng của col */
-    height: 100%;
-    /* Đảm bảo card có chiều cao bằng nhau */
+.progress-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 1320px;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+.progress-bar {
+    display: flex;
     justify-content: space-between;
-    /* Căn đều nội dung bên trong card */
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
-.guide-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+.progress-step {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    color: #fff;
 }
 
-.guide-card .card-title {
-    color: var(--color-accent);
-    /* Xanh đậm, Thủy */
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
+.progress-step.active {
+    background-color: #3f5f76;
 }
 
-.guide-card .card-text {
-    color: var(--color-dark);
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-    flex-grow: 1;
-    /* Đảm bảo phần text chiếm không gian còn lại */
+.progress-line {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    height: 4px;
+    background-color: #ccc;
+    z-index: 1;
+    transform: translateY(-50%);
 }
 
-.guide-card .btn-primary {
-    background-color: var(--color-accent);
-    border: none;
-    transition: transform 0.3s ease;
+.progress-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #4CAF50;
+    transition: width 0.3s ease;
 }
 
-.guide-card .btn-primary:hover {
-    transform: scale(1.05);
+.content {
+    display: none;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .guide {
-        padding: 11rem 0 3rem 0;
-        /* Giảm padding-top trên tablet */
-    }
-
-    .guide h2 {
-        font-size: 2rem;
-    }
-
-    .guide-card {
-        padding: 1rem;
-    }
-
-    .guide-card .card-title {
-        font-size: 1.1rem;
-    }
-
-    .guide-card .card-text {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .guide {
-        padding: 10rem 0 2rem 0;
-        /* Giảm padding-top trên mobile */
-    }
-
-    .guide h2 {
-        font-size: 1.75rem;
-    }
-
-    .guide-card {
-        margin-bottom: 1.5rem;
-    }
+.content.active {
+    display: block;
 }

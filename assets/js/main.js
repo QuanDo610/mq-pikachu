@@ -56,4 +56,35 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         console.error('Header placeholder not found.');
     }
+
+    Promise.all([
+        fetch('../../components/header.html').then(response => response.text()),
+        fetch('../../components/footer.html').then(response => response.text())
+    ])
+        .then(([headerData, footerData]) => {
+            // Insert header and footer
+            document.getElementById('header-placeholder').innerHTML = headerData;
+            document.getElementById('footer-placeholder').innerHTML = footerData;
+
+            // Calculate padding after header is loaded
+            const header = document.querySelector('.header');
+            const guideSection = document.querySelector('#guide-section');
+            if (header && guideSection) {
+                const headerHeight = header.offsetHeight;
+                guideSection.style.paddingTop = `${headerHeight + 50}px`; // Tăng khoảng cách an toàn lên 50px
+            }
+        })
+        .catch(error => {
+            console.error('Error loading header/footer:', error);
+        });
+
+    // Update padding on resize
+    window.addEventListener('resize', function () {
+        const header = document.querySelector('.header');
+        const guideSection = document.querySelector('#guide-section');
+        if (header && guideSection) {
+            const headerHeight = header.offsetHeight;
+            guideSection.style.paddingTop = `${headerHeight + 50}px`;
+        }
+    });
 });
