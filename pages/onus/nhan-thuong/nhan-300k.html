@@ -75,8 +75,8 @@
 
         // Load header and footer, then calculate padding
         Promise.all([
-            fetch('../../../components/header.html').then(response => response.text()),
-            fetch('../../../components/footer.html').then(response => response.text())
+            fetch('/../../../components/header.html').then(response => response.text()),
+            fetch('/../../../components/footer.html').then(response => response.text())
         ])
             .then(([headerData, footerData]) => {
                 document.getElementById('header-placeholder').innerHTML = headerData;

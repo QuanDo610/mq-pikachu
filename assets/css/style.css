@@ -291,7 +291,7 @@
     .illustration-gallery img,
     .illustration-gallery img:nth-child(n+3) {
         max-width: 100%;
-        /* Đầy chiều rộng trên mobile */
+        width: 100% !important;
     }
 }
 

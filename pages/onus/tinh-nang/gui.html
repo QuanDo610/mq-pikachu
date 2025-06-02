@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Fancy Box -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../../../assets/css/variables.css">
     <link rel="stylesheet" href="../../../assets/css/main.css">
@@ -34,32 +36,53 @@
                         <h3>Cách 1: Gửi Off-chain</h3>
                         
 
-                        <ol class="step-section">
-                            <li>Tại màn hình chính, nhấn Gửi tại mục Tổng tài sản.</li>
+                        <ol>
+                            <li>Tại màn hình chính, nhấn <span class="fw-bold">Gửi</span> tại mục Tổng tài sản.</li>
                             <li>Màn hình hiển thị thông tin các tài sản bạn đang sở hữu. Chọn đơn vị tài sản/token muốn gửi.</li>
-                            <li>Chọn OFF-CHAIN.</li>
-                            <li>Nhập số lượng tài sản/token muốn gửi và nhấn Tiếp tục.</li>
+                            <li>Chọn <span class="fw-bold">OFF-CHAIN</span>.</li>
+                            <li>Nhập số lượng tài sản/token muốn gửi và nhấn <span class="fw-bold">Tiếp tục</span>.</li>
                             <li>Nhập thông tin người nhận.</li>
                             <li>Xác nhận giao dịch và nhấn Gửi.</li>
                             <li>Xác thực OTP để hoàn thành giao dịch.</li>
                         </ol>
 
+                        <div class="illustration-gallery">
+                            <img src="/assets/img/onus/offchain-1.jpg" data-fancybox="kyc2-gallery"
+                                data-src="/assets/img/onus/offchain-1.jpg" alt="Hướng dẫn gửi Off-Chain - Bước 1"
+                                class="img-fluid mb-3 w-25 object-fit-cover">
+                            <img src="/assets/img/onus/offchain-2.jpg" data-fancybox="kyc2-gallery"
+                                data-src="/assets/img/onus/offchain-2.jpg" alt="Hướng dẫn gửi Off-Chain - Bước 2"
+                                class="img-fluid mb-3 w-25 object-fit-cover">
+                            <img src="/assets/img/onus/offchain-3.jpg" data-fancybox="kyc2-gallery"
+                                data-src="/assets/img/onus/offchain-3.jpg" alt="Hướng dẫn gửi Off-Chain - Bước 3"
+                                class="img-fluid mb-3 w-25 object-fit-cover">
+                        </div>
                        
                         <br>
                         
                         <h3>Cách 2: Gửi On-chain</h3>
 
-                        <ol class="step-section">
-                            <li>Tại màn hình chính, nhấn vào Gửi tại mục Tổng tài sản.</li>
+                        <ol>
+                            <li>Tại màn hình chính, nhấn vào <span class="fw-bold">Gửi</span> tại mục Tổng tài sản.</li>
                             <li>Màn hình hiển thị thông tin ví tài sản, chọn đơn vị tài sản/token muốn gửi.</li>
-                            <li>Chọn mạng lưới muốn gửi On-chain.</li>
-                            <li>Nhập số lượng đơn vị tài sản/token muốn gửi và nhấn Tiếp tục.</li>
+                            <li>Chọn mạng lưới muốn gửi<span class="fw-bold"> ON-CHAIN</span>.</li>
+                            <li>Nhập số lượng đơn vị tài sản/token muốn gửi và nhấn <span class="fw-bold">Tiếp tục</span>.</li>
                             <li>Nhập địa chỉ ví nhận On-chain.</li>
                             <li>Xác nhận giao dịch và nhấn Gửi.</li>
                             <li>Xác thực OTP để hoàn thành giao dịch.</li>
                         </ol>
 
-                        
+                        <div class="illustration-gallery">
+                            <img src="/assets/img/onus/onchain-1.jpg" data-fancybox="kyc2-gallery"
+                                data-src="/assets/img/onus/offchain-1.jpg" alt="Hướng dẫn gửi On-Chain - Bước 1"
+                                class="img-fluid mb-3 w-25 object-fit-cover">
+                            <img src="/assets/img/onus/onchain-2.jpg" data-fancybox="kyc2-gallery"
+                                data-src="/assets/img/onus/offchain-2.jpg" alt="Hướng dẫn gửi On-Chain - Bước 2"
+                                class="img-fluid mb-3 w-25 object-fit-cover">
+                            <img src="/assets/img/onus/offchain-3.jpg" data-fancybox="kyc2-gallery"
+                                data-src="/assets/img/onus/offchain-3.jpg" alt="Hướng dẫn gửi On-Chain - Bước 3"
+                                class="img-fluid mb-3 w-25 object-fit-cover">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -68,7 +91,9 @@
 
     <!-- Footer -->
     <div id="footer-placeholder"></div>
-
+    <!-- Fancy Box -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>Fancybox.bind("[data-fancybox]", {});</script>  
     <!-- Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->

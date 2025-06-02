@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Fancy Box -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../../../assets/css/variables.css">
     <link rel="stylesheet" href="../../../assets/css/main.css">
@@ -36,20 +38,26 @@
                         <br>
                         <h4>Các sản phẩm staking trên ONUS</h4>
 
-                        <ul class="step-section">
-                            <li>Lãi qua đêm</li>
-                            <div class="illustration-gallery mt-3">
-                                <img src="/assets/img/onus/lai-kep.png" alt="Lãi qua đêm"
+                        <ul class="text-decoration-none">
+                            <li> 
+                                <h5>Lãi qua đêm</h5>
+                            </li>
+                            <div class="illustration-gallery mt-3 mb-6">
+                                <img src="/assets/img/onus/lai-kep.png" alt="Lãi qua đêm" data-fancybox="lai-qua-dem"
                                     class="img-fluid mb-3">
                             </div>
-                            <li>Farming pool</li>
-                            <div class="illustration-gallery mt-3">
-                                <img src="/assets/img/onus/farming.png" alt="Farming"
+                            <li>
+                                <h5>Farming pool</h5>
+                            </li>
+                            <div class="illustration-gallery mt-3 mb-6">
+                                <img src="/assets/img/onus/farming.png" alt="Farming" data-fancybox="farming"
                                     class="img-fluid mb-3">
                             </div>
-                            <li>ONUS Shares</li>
-                            <div class="illustration-gallery mt-3">
-                                <img src="/assets/img/onus/share.jpg" alt="ONUS Shares"
+                            <li>
+                                <h5>ONUS Shares</h5>
+                            </li>
+                            <div class="illustration-gallery mt-3 mb-6">
+                                <img src="/assets/img/onus/share.jpg" alt="ONUS Shares" data-fancybox="onus-share"
                                     class="img-fluid mb-3">
                             </div>
                         </ul>
@@ -65,7 +73,9 @@
 
     <!-- Footer -->
     <div id="footer-placeholder"></div>
-
+    <!-- Fancy Box -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>Fancybox.bind("[data-fancybox]", {});</script>
     <!-- Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->

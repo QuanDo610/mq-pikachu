@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Fancy Box -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../../../assets/css/variables.css">
     <link rel="stylesheet" href="../../../assets/css/main.css">
@@ -31,19 +33,23 @@
                 <div class="col-12">
                     <div class="step-section">
 
-                        <h3>ONUS Spot là nền tảng giao dịch giao ngay, cho phép người dùng mua bán các loại tài sản số theo cơ chế Orderbook</h3>
+                        <h3 class="mb-2">ONUS Spot là nền tảng giao dịch giao ngay, cho phép người dùng mua bán các loại tài sản số theo cơ chế Orderbook</h3>
 
-                        <ol class="step-section">
-                            <li>Mở ứng dụng ONUS. Chọn mục Giao dịch tại góc phải phía dưới màn hình.</li>
-                            <li>Chọn tab Spot.</li>
+                        <ol>
+                            <li>Mở ứng dụng ONUS. Chọn mục <span class="fw-bold">Giao dịch</span> tại góc phải phía dưới màn hình.</li>
+                            <li>Chọn tab <span class="fw-bold">Spot</span></li>
                             <li>Tại màn hình ONUS Spot, chọn biểu tượng (+).</li>
-                            <li>Chọn Nạp.</li>
+                            <li>Chọn <span class="fw-bold">Nạp</span>.</li>
                             <li>Chọn tài sản bạn muốn nạp và nhập số lượng. Nhấn xác nhận để hoàn tất.</li>
                         </ol>
 
                         <div class="illustration-gallery mt-3">
-                            <img src="/assets/img/onus/nap-spot.png" alt="Spot"
-                                class="img-fluid mb-3">
+                            <img src="/assets/img/onus/nap-spot.png" data-fancybox="spot"
+                                data-src="/assets/img/onus/nap-spot.png" alt="Hướng dẫn Spot - Bước 1"
+                                class="img-fluid mb-3 w-50 object-fit-cover">
+                            <img src="/assets/img/onus/spot-1.png" data-fancybox="spot"
+                                data-src="/assets/img/onus/spot-1.png" alt="Hướng dẫn Spot - Bước 2"
+                                class="img-fluid mb-3 w-50 object-fit-cover">
                         </div>
                         <br>
                         
@@ -55,7 +61,9 @@
 
     <!-- Footer -->
     <div id="footer-placeholder"></div>
-
+    <!-- Fancy Box -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>Fancybox.bind("[data-fancybox]", {});</script>
     <!-- Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
