@@ -29,7 +29,7 @@ footer {
 .hero {
     background: linear-gradient(135deg, #272754 0%, #272754 100%);
     color: var(--color-white);
-    min-height: 80vh;
+    max-height: 80vh;
     padding: 4rem 0;
     position: relative;
     overflow: hidden;
