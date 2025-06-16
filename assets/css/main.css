@@ -27,25 +27,125 @@ footer {
 
 /* Hero Section */
 .hero {
-    background: var(--gradient-hero);
+    background: linear-gradient(135deg, #272754 0%, #272754 100%);
     color: var(--color-white);
-    min-height: 70vh;
+    min-height: 80vh;
     padding: 4rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.hero .container {
+    position: relative;
+    z-index: 2;
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
+    margin-bottom: 1.5rem;
 }
 
 .hero p {
     font-size: 1.25rem;
     max-width: 600px;
-    margin: 1rem auto;
+    margin: 1rem 0 2rem 0;
+    line-height: 1.6;
+}
+
+.crypto-icons {
+    position: relative;
+    height: 400px;
+}
+
+.crypto-icon {
+    position: absolute;
+    border-radius: 50%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: float 3s ease-in-out infinite;
+}
+
+.crypto-icon img {
+    width: 180px;
+    height: 180px;
+}
+
+.crypto-icon:nth-child(1) {
+    top: 15px;
+    right: 10px;
+    animation-delay: 0s;
+}
+
+.crypto-icon:nth-child(2) {
+    top: 140px;
+    right: 60px;
+    animation-delay: 0.5s;
+}
+
+.crypto-icon:nth-child(3) {
+    top: 70px;
+    right: 200px;
+    animation-delay: 1s;
+}
+
+.crypto-icon:nth-child(4) {
+    top: 220px;
+    right: 210px;
+    animation-delay: 1.5s;
+}
+
+.crypto-icon:nth-child(5) {
+    top: 230px;
+    right: -35px;
+    animation-delay: 2s;
+}
+
+.crypto-icon:nth-child(6) {
+    top: 340px;
+    right: 100px;
+    animation-delay: 2s;
+}
+
+.bitcoin img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.cardano img {
+    width: 170px !important;
+    height: 170px !important;
+}
+
+.bitcoin2 img {
+    width: 175px !important;
+    height: 175px !important;
+}
+
+.ethereum img {
+    width: 220px !important;
+    height: 220px !important;
+}
+
+.binance img{
+    width: 170px !important;
+    height: 170px !important;
+}
+.stellar img{
+    width: 130px !important;
+    height: 130px !important;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 .hero .btn-primary {
@@ -116,9 +216,46 @@ footer {
     transform: scale(1.05);
 }
 
+/* Features Section */
+.features {
+    padding: 5rem 0;
+}
+
+.feature-item {
+    margin-bottom: 2rem;
+}
+
+.feature-number {
+    min-width: 40px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Why Choose Section */
+.why-choose {
+    padding: 5rem 0;
+    background: #f8f9fa;
+}
+
+.why-choose-item {
+    padding: 2rem 1rem;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.why-choose-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.why-choose-item .icon-wrapper {
+    margin-bottom: 1.5rem;
+}
+
 /* Team Section */
 .team {
-    padding: 4rem 0;
+    padding: 5rem 0;
 }
 
 .team h2 {
@@ -135,32 +272,33 @@ footer {
 }
 
 .team-card {
-    border: none;
-    background-color: var(--color-white);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    border: none !important;
 }
 
 .team-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 40px 40px rgba(0,0,0,0.75);
 }
 
-.team-card .card-title {
-    color: var(--color-accent);
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
+.team-card img {
+    border: 4px solid #f8f9fa;
 }
 
-.team-card .card-text {
-    color: var(--color-dark);
-    font-size: 1rem;
+.social-links a {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Community Section */
 .community {
-    background-color: var(--color-bg);
-    padding: 4rem 0;
+    padding: 5rem 0;
+    background: #f8f9fa;
 }
 
 .community h2 {
@@ -177,55 +315,23 @@ footer {
 }
 
 .community-card {
-    border: none;
-    background-color: var(--color-white);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
-    max-width: 100%;
+    border-radius: 20px;
+    transition: all 0.3s ease;
 }
 
 .community-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
-.community-card .card-title {
-    color: var(--color-accent);
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-}
-
-.community-card .qr-code {
-    max-width: 150px;
-    width: 100%;
-}
-
-.community-card .btn-primary {
-    background-color: var(--color-accent);
-    border: none;
-    transition: transform 0.3s ease;
-}
-
-.community-card .btn-primary:hover {
-    transform: scale(1.05);
-}
-
-.community-card .btn-outline-primary {
-    border-color: var(--color-primary);
-    color: var(--color-primary);
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.community-card .btn-outline-primary:hover {
-    background-color: var(--color-primary);
-    color: var(--color-white);
+.qr-code {
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 /* Testimonials Section */
 .testimonials {
-    background-color: var(--color-white);
-    padding: 4rem 0;
+    padding: 5rem 0;
 }
 
 .testimonials h2 {
@@ -235,116 +341,87 @@ footer {
 }
 
 .testimonial-card {
-    border: none;
-    background-color: var(--color-bg);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    padding: 1.5rem;
-    height: 100%;
+    border-radius: 20px;
+    transition: all 0.3s ease;
 }
 
-.testimonial-card img {
-    border-radius: 10px;
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
-.testimonial-card .rating {
-    font-size: 1.1rem;
-}
-
-.testimonial-card .rating i {
+.rating i {
+    font-size: 1rem;
     margin: 0 2px;
 }
 
-.testimonial-card .card-text {
-    color: var(--color-dark);
-    font-size: 1rem;
-    font-style: italic;
-    margin-bottom: 1rem;
+/* FAQ Section */
+.faq {
+    padding: 5rem 0;
+    background: #f8f9fa;
 }
 
-.testimonial-card .card-title {
-    color: var(--color-accent);
-    font-size: 1.2rem;
-    font-weight: 600;
+.accordion-item {
+    border-radius: 15px !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
-/* CTA Section */
-.cta {
-    background: var(--gradient-accent);
-    color: var(--color-white);
-    padding: 4rem 0;
-}
-
-.cta h3 {
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.cta p {
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 1rem auto;
-}
-
-.cta .btn-primary {
-    background-color: var(--color-accent);
+.accordion-button {
+    border-radius: 15px !important;
     border: none;
-    padding: 0.75rem 2rem;
-    font-size: 1.1rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+    padding: 1.5rem;
 }
 
-.cta .btn-primary:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.accordion-button:not(.collapsed) {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
 }
 
-/* Responsive Adjustments */
+.accordion-button:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.accordion-body {
+    padding: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
-
+    
     .hero p {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
-
-    .donations,
-    .team,
-    .community,
-    .testimonials,
-    .cta {
-        padding: 3rem 0;
+    
+    .crypto-icons {
+        height: 200px;
+        margin-top: 2rem;
     }
-
-    .donations h3,
-    .team h2,
-    .community h2,
-    .testimonials h2,
-    .cta h3 {
-        font-size: 1.5rem;
-    }
-
-    .donation-card {
-        padding: 1rem;
-    }
-
-    .donation-card .qr-code,
-    .community-card .qr-code {
-        max-width: 120px;
-    }
-
-    .testimonial-card {
-        padding: 1rem;
-    }
-
-    .testimonial-card img {
+    
+    .crypto-icon {
         width: 60px;
         height: 60px;
+        padding: 10px;
     }
-
-    .testimonial-card .rating {
-        font-size: 1rem;
+    
+    .crypto-icon img {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .feature-item {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    
+    .features .row {
+        flex-direction: column-reverse;
     }
 }
 
