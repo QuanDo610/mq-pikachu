@@ -1,77 +1,168 @@
 .footer {
-    background-color: var(--color-dark);
+    background: linear-gradient(135deg, #011e3a 0%, #34495e 100%);
     color: var(--color-white);
-    padding: 3rem 0;
+    padding: 4rem 0 2rem;
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="rgba(255,255,255,0.02)"><polygon points="0,0 1000,100 1000,0"/></svg>') no-repeat;
+    background-size: cover;
+}
+
+.footer .container {
+    position: relative;
+    z-index: 2;
+}
+
+.footer-brand .brand-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #4285f4;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.footer-description {
+    color: #bdc3c7;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
 }
 
 .footer-title {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 600;
+    color: #ffffff;
     margin-bottom: 1.5rem;
-    color: var(--color-secondary);
-    transition: color 0.3s ease;
+    position: relative;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #4285f4;
 }
 
 .footer-link {
-    color: var(--color-white);
+    color: #bdc3c7;
     text-decoration: none;
-    font-size: 0.95rem;
-    display: block;
-    margin-bottom: 0.75rem;
-    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
 }
 
 .footer-link:hover {
-    color: var(--color-primary);
-    transform: translateX(5px);
+    color: #ffffff;
 }
 
-.social-icons .social-icon {
-    color: var(--color-white);
-    font-size: 1.5rem;
-    margin-right: 1rem;
-    text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease;
+.social-icons {
+    display: flex;
+    align-items: center;
 }
 
-.social-icons .social-icon:hover {
-    color: var(--color-accent);
-    transform: scale(1.2);
+.social-icon {
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.footer p {
-    font-size: 0.9rem;
-    color: var(--color-white);
+.social-icon:hover {
+    transform: translateY(-3px) scale(1.1);
     opacity: 0.8;
+}
+
+.social-img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0.8);
+    transition: filter 0.3s ease;
+}
+
+.social-icon:hover .social-img {
+    filter: brightness(1.2);
+}
+
+.contact-info {
+    margin-top: 1rem;
+}
+
+.contact-item {
+    margin-bottom: 0.75rem;
+}
+
+.contact-icon {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0.7);
+}
+
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 2rem 0 1rem;
+}
+
+.footer-copyright {
+    color: #95a5a6;
+    font-size: 0.85rem;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+    .footer {
+        padding: 3rem 0 1.5rem;
+    }
+    
+    .footer-brand .brand-text {
+        font-size: 1.5rem;
+    }
+    
     .footer-title {
         font-size: 1.1rem;
+        margin-bottom: 1rem;
     }
-
-    .footer-link {
-        font-size: 0.9rem;
+    
+    .social-icons {
+        justify-content: center;
+        margin-top: 1.5rem;
     }
-
-    .social-icons .social-icon {
-        font-size: 1.3rem;
+    
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start !important;
+        text-align: left;
+    }
+    
+    .contact-icon {
+        margin-bottom: 0.25rem;
+    }
+    
+    .footer-description {
+        text-align: center;
+        margin-bottom: 2rem;
     }
 }
 
 @media (max-width: 576px) {
-    .footer {
-        text-align: center;
+    .footer-title::after {
+        left: 50%;
+        transform: translateX(-50%);
     }
-
-    .footer .col-lg-4,
-    .footer .col-lg-2,
-    .footer .col-lg-3 {
+    
+    .col-lg-3 {
+        text-align: center;
         margin-bottom: 2rem;
     }
-
-    .social-icons {
+    
+    .contact-item {
         justify-content: center;
     }
 }
