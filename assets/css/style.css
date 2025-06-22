@@ -1,9 +1,8 @@
 /* Guide Section */
 .guide {
     background-color: var(--color-white);
-    /* Trắng, sạch */
-    padding: 12rem 0 4rem 0;
-    /* Tăng padding-top để tránh bị header che */
+    padding: 5rem 0 4rem 0;
+    min-height: 60vh;
 }
 
 /* Intro List */
@@ -123,22 +122,27 @@
 }
 
 .hero-instruction {
-    background: linear-gradient(to right, #3c1f57, #1d3062);
+    background: linear-gradient(135deg, #272754 0%, #272754 100%);
     margin-top: 76px;
     padding: 80px 0;
 }
 
 .hero-instruction h1 {
-    font-size: 54px;
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0;
+    font-weight: 700;
 }
 
 /* Step Section */
 .step-section {
-    background-color: var(--color-bg);
+    background-color: #ffffff;
     border-radius: 15px;
     padding: 2rem;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .step-section:hover {
@@ -179,6 +183,13 @@
     padding: 0; 
 }
 
+#recharge-ul {
+    padding: 1.75rem;
+}
+
+#recharge-title {
+    padding-left: 1.75rem;
+}
 .step-list {
     list-style: none;
 }
@@ -230,14 +241,24 @@
 .illustration-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 1rem;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .illustration-gallery img {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
     cursor: pointer;
+    max-width: 95%;
+    width: 95%;
+    height: auto;
+}
+
+.illustration-gallery img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
 
 .illustration-gallery_gift img,
@@ -270,6 +291,35 @@
     border-radius: 20px;;
 }
 
+/* Chart Items for Blog Pages */
+.chart-item {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 100%;
+}
+
+.chart-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.chart-item h5 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.chart-item .illustration-gallery img {
+    border-radius: 8px;
+    max-width: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0.5rem;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
 
@@ -282,10 +332,8 @@
     .content {
         box-shadow: none;
         padding: 20px 0;
-    }
-
-    .guide {
-        padding: 11rem 0 3rem 0;
+    }    .guide {
+        padding: 2rem 0 3rem 0;
     }
 
     .intro-text,
@@ -302,11 +350,13 @@
     .btn-store {
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
-    }
-
-    .illustration-gallery {
+    }    .illustration-gallery {
         flex-direction: column;
-        /* Hiển thị dọc trên tablet */
+        align-items: center;
+    }    .illustration-gallery img {
+        max-width: 95% !important;
+        width: 95% !important;
+        margin-bottom: 1rem;
     }
 
     .illustration-gallery img,
@@ -317,6 +367,15 @@
 
     .illustration-gallery img {
         max-width: 300px;
+    }
+
+    .chart-item {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .chart-item h5 {
+        font-size: 1.1rem;
     }
 }
 
@@ -331,14 +390,11 @@
     .content {
         box-shadow: none;
         padding: 20px 0;
-    }
-
-    .guide {
-        padding: 10rem 0 2rem 0;
-    }
-
-    .step-section {
+    }    .guide {
+        padding: 2rem 0 2rem 0;
+    }    .step-section {
         padding: 1.5rem;
+        width: 90%;
     }
 
     .intro-text,
@@ -354,16 +410,16 @@
     .btn-store {
         width: 100%;
         text-align: center;
+    }    .illustration-gallery img {
+        max-width: 95% !important;
+        width: 95% !important;
+        margin-bottom: 1rem;
     }
 
-    .illustration-gallery img {
-        max-width: 100%;
-    }
-
-    .illustration-gallery img,
-    .illustration-gallery img:nth-child(n+3) {
-        max-width: 100%;
-        width: 100% !important;
+    .illustration-gallery_gift img,
+    .illustration-gallery_money img,
+    .illustration-gallery_partner img {
+        max-width: 95% !important;
     }
 }
 

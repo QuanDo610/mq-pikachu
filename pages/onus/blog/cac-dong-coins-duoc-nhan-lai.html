@@ -19,23 +19,38 @@
     <link rel="stylesheet" href="../../../assets/css/style.css">
 </head>
 
-<body>
-    <!-- Header -->
+<body>    <!-- Header -->
     <div id="header-placeholder"></div>
+
+    <!-- Hero Instruction Section -->
+    <div class="hero-instruction text-center">
+        <h1 class="hero-title text-light">Biểu đồ các đồng coin có lãi qua đêm</h1>
+    </div>
 
     <!-- Guide Section -->
     <section class="guide" id="guide-section">
         <div class="container">
-            <h2 class="text-center mb-5">Biểu đồ các đồng coin có lãi qua đêm
-            </h2>
 
-            <div class="row">
-                <div class="col-12">
-                    <div class="step-section">
-
+            <div class="row">                <div class="col-12">
+                    <div class="step-section">                        <!-- Ảnh chính - Bảng Nhận Lãi qua đêm trên ONUS -->
                         <div class="illustration-gallery mt-3">
-                            <img src="/assets/img/onus/coin-lai.png" alt="Lãi kép" data-fancybox="coin-lai" 
-                                class="img-fluid mb-3">
+                            <img src="/assets/img/onus/ticker_table.png" alt="Nhận Lãi qua đêm trên ONUS" data-fancybox="coin-lai" 
+                                class="img-fluid mb-3" style="max-width: 100%; width: 100%;">
+                        </div>
+                          <!-- 2 biểu đồ bổ sung ở dưới -->
+                        <div class="row mt-4">
+                            <div class="col-md-6 mb-3">
+                                <div class="illustration-gallery">
+                                    <img src="/assets/img/onus/Static1.png" alt="Biểu đồ APY theo đồng coin" 
+                                        data-fancybox="charts" class="img-fluid" style="max-width: 100%; width: 100%;">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="illustration-gallery">
+                                    <img src="/assets/img/onus/Static2.png" alt="Lãi suất theo thời gian" 
+                                        data-fancybox="charts" class="img-fluid" style="max-width: 100%; width: 100%;">
+                                </div>
+                            </div>
                         </div>
                         <br>
                         
@@ -54,8 +69,7 @@
     <!-- Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
-    <script src="../../../assets/js/main.js"></script>
-    <script>
+    <script src="../../../assets/js/main.js"></script>    <script>
         // Load header and footer, then calculate padding
         Promise.all([
             fetch('/../../../components/header.html').then(response => response.text()),
@@ -67,26 +81,32 @@
                 document.getElementById('footer-placeholder').innerHTML = footerData;
 
                 // Calculate padding after header is loaded
-                const header = document.querySelector('.header');
-                const guideSection = document.querySelector('#guide-section');
-                if (header && guideSection) {
-                    const headerHeight = header.offsetHeight;
-                    guideSection.style.paddingTop = `${headerHeight + 50}px`;
-                }
+                adjustGuidePadding();
             })
             .catch(error => {
                 console.error('Error loading header/footer:', error);
             });
 
-        // Update padding on resize
-        window.addEventListener('resize', function () {
+        // Function to adjust guide section padding
+        function adjustGuidePadding() {
             const header = document.querySelector('.header');
+            const heroInstruction = document.querySelector('.hero-instruction');
             const guideSection = document.querySelector('#guide-section');
+            
             if (header && guideSection) {
-                const headerHeight = header.offsetHeight;
-                guideSection.style.paddingTop = `${headerHeight + 50}px`;
+                if (heroInstruction) {
+                    // If hero-instruction exists, use minimal padding
+                    guideSection.style.paddingTop = '2rem';
+                } else {
+                    // If no hero-instruction, account for header height
+                    const headerHeight = header.offsetHeight;
+                    guideSection.style.paddingTop = `${headerHeight + 50}px`;
+                }
             }
-        });
+        }
+
+        // Update padding on resize
+        window.addEventListener('resize', adjustGuidePadding);
     </script>
 </body>
 
