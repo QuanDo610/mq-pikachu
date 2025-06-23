@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="../../../assets/css/style.css">
 </head>
 
-<body>    <!-- Header -->
+<body>
+    <!-- Header -->
     <div id="header-placeholder"></div>
 
     <div class="hero-instruction text-center">
@@ -29,35 +30,107 @@
     <!-- Guide Section -->
     <section class="guide" id="guide-section">
         <div class="container">
+            <!-- Method Selection Cards -->
+            <div class="row mb-5">
+                <div class="col-lg-6 mb-3">
+                    <div class="method-selection-card" data-target="farming-guide-section">
+                        <div class="method-card-header d-flex align-items-center">
+                            <div class="method-card-icon bg-success text-white me-3">
+                                <i class="bi bi-seedling"></i>
+                            </div>
+                            <h4 class="method-card-title mb-0">Farming Pool</h4>
+                        </div>
+                        <p class="method-card-description">
+                            Tham gia các pool farming để stake tài sản và nhận thưởng với tỷ lệ hấp dẫn.
+                        </p>
+                        <div class="method-card-action">
+                            <span class="action-text">Lợi nhuận từ stake tài sản</span>
+                            <i class="bi bi-arrow-right action-arrow"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-3">
+                    <div class="method-selection-card" data-target="farming-rewards-section">
+                        <div class="method-card-header d-flex align-items-center">
+                            <div class="method-card-icon bg-warning text-dark me-3">
+                                <i class="bi bi-gift"></i>
+                            </div>
+                            <h4 class="method-card-title mb-0">Nhận thưởng</h4>
+                        </div>
+                        <p class="method-card-description">
+                            Hướng dẫn cách theo dõi và nhận thưởng từ các pool farming đã tham gia.
+                        </p>
+                        <div class="method-card-action">
+                            <span class="action-text">Tối ưu hóa lợi nhuận</span>
+                            <i class="bi bi-arrow-right action-arrow"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <div class="row">
+            <!-- Farming Guide Section -->
+            <div class="row mb-5" id="farming-guide-section">
                 <div class="col-12">
-                    <div class="container">
+                    <div class="method-box">
+                        <div class="method-header d-flex align-items-center mb-3">
+                            <div class="method-icon bg-success text-white me-3">
+                                <i class="bi bi-seedling"></i>
+                            </div>
+                            <h3 class="method-title mb-0">Hướng dẫn tham gia Farming trên ONUS</h3>
+                        </div>
                         
-                        <div class="container my-3">
-                            <div class="alert alert-primary" role="alert">
-                                <h4 class="alert-heading mb-0">Tính năng Farming sẽ cung cấp cho bạn những chương trình (Pool) để stake tài sản nhận thưởng với thời hạn và tỷ lệ nhận thưởng khác nhau.</h4>
-                            </div>
-                            
-                            <h5 class="ms-2 mt-3">Hướng dẫn chi tiết:</h5>
-                            
-                            <div class="container warning-spend py-2">                        
-                                <ul class="step-list">
-                                    <li> <i class="bi bi-check-circle"></i> Tại màn hình chính, chọn <span class="fw-bold">Farming</span> tại mục Ứng dụng.</li>
-                                    <li> <i class="bi bi-check-circle"></i> Tìm pool Farming theo nhu cầu.</li>
-                                    <li> <i class="bi bi-check-circle"></i> Nhấn <span class="fw-bold">Nạp</span> để tham gia.</li>
-                                    <li> <i class="bi bi-check-circle"></i> Nhập số lượng muốn tham gia Farming, hệ thống sẽ tự động hiển thị các thông tin cần thiết.</li>
-                                    <li> <i class="bi bi-check-circle"></i> Nhấn <span class="fw-bold">Nạp tài sản</span> để tham gia Farming.</li>
-                                </ul>  
-                            </div>
+                        <div class="alert alert-primary" role="alert">
+                            <h4 class="alert-heading mb-0">Tính năng Farming sẽ cung cấp cho bạn những chương trình (Pool) để stake tài sản nhận thưởng với thời hạn và tỷ lệ nhận thưởng khác nhau.</h4>
                         </div>
 
-                        <div class="illustration-gallery mt-3">
-                            <img src="/assets/img/onus/farming.png" data-fancybox="farming" alt="Farming"
-                                class="img-fluid mb-3">
+                        <div class="steps-container">
+                            <ol class="method-steps">
+                                <li>Tại màn hình chính, chọn <span class="fw-bold">Farming</span> tại mục Ứng dụng.</li>
+                                <li>Tìm pool Farming theo nhu cầu của bạn.</li>
+                                <li>Nhấn <span class="fw-bold">Nạp</span> để tham gia pool.</li>
+                                <li>Nhập số lượng muốn tham gia Farming, hệ thống sẽ tự động hiển thị các thông tin cần thiết.</li>
+                                <li>Nhấn <span class="fw-bold">Nạp tài sản</span> để hoàn tất tham gia Farming.</li>
+                                <li>Theo dõi tiến độ và thu hoạch thưởng định kỳ.</li>
+                            </ol>
                         </div>
-                        <br>
+
+                        <div class="illustration-gallery mt-4">
+                            <div class="row g-3">
+                                <div class="col-md-12">
+                                    <div class="image-wrapper">
+                                        <img src="/assets/img/onus/farming.png" alt="Giao diện Farming" 
+                                             class="img-fluid method-image" data-fancybox="farming-gallery">
+                                        <p class="image-caption">Giao diện Farming</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Farming Rewards Section -->
+            <div class="row mb-5" id="farming-rewards-section">
+                <div class="col-12">
+                    <div class="method-box">
+                        <div class="method-header d-flex align-items-center mb-3">
+                            <div class="method-icon bg-warning text-dark me-3">
+                                <i class="bi bi-gift"></i>
+                            </div>
+                            <h3 class="method-title mb-0">Quản lý và nhận thưởng Farming</h3>
+                        </div>
                         
+                        <p class="method-description">
+                            Sau khi tham gia farming, bạn cần theo dõi và quản lý các pool để tối ưu hóa lợi nhuận.
+                        </p>                        <div class="steps-container">
+                            <ol class="method-steps">
+                                <li>Kiểm tra tình trạng pool farming trong phần <span class="fw-bold">Danh mục của tôi</span></li>
+                                <li>Theo dõi tỷ lệ lãi suất và thời gian còn lại</li>
+                                <li>Thu hoạch thưởng khi đến thời hạn hoặc khi muốn rút sớm</li>
+                                <li>Đánh giá hiệu quả và cân nhắc tái đầu tư</li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -92,8 +165,7 @@
                     const headerHeight = header.offsetHeight;
                     guideSection.style.paddingTop = `${headerHeight}px`;
                 }
-            })
-            .catch(error => {
+            })            .catch(error => {
                 console.error('Error loading header/footer:', error);
             });
 
@@ -105,6 +177,32 @@
                 const headerHeight = header.offsetHeight;
                 guideSection.style.paddingTop = `${headerHeight}px`;
             }
+        });
+
+        // Method selection card click handlers
+        document.addEventListener('DOMContentLoaded', function() {
+            const methodCards = document.querySelectorAll('.method-selection-card');
+            
+            methodCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-target');
+                    const targetSection = document.getElementById(targetId);
+                    
+                    if (targetSection) {
+                        // Smooth scroll to target section
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        
+                        // Add highlight effect
+                        targetSection.classList.add('highlight-section');
+                        setTimeout(() => {
+                            targetSection.classList.remove('highlight-section');
+                        }, 2000);
+                    }
+                });
+            });
         });
     </script>
 </body>

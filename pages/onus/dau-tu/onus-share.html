@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MQ Pikachu - ONUS Shares trên ONUS</title>
+    <title>MQ Pikachu - ONUS Shares</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -24,39 +24,111 @@
 
     <div class="hero-instruction text-center">
         <h1 class="hero-title text-light">Hướng dẫn tính năng ONUS Shares trên ONUS</h1>
-    </div>
-
-    <!-- Guide Section -->
+    </div>    <!-- Guide Section -->
     <section class="guide" id="guide-section">
         <div class="container">
+            <!-- Method Selection Cards -->
+            <div class="row mb-5">
+                <div class="col-lg-6 mb-3">
+                    <div class="method-selection-card" data-target="onus-shares-guide-section">
+                        <div class="method-card-header d-flex align-items-center">
+                            <div class="method-card-icon bg-purple text-white me-3">
+                                <i class="bi bi-share"></i>
+                            </div>
+                            <h4 class="method-card-title mb-0">ONUS Shares</h4>
+                        </div>
+                        <p class="method-card-description">
+                            Stake ONUS để nhận vONUS, tham gia quản trị và chia sẻ 25% lợi nhuận nền tảng.
+                        </p>
+                        <div class="method-card-action">
+                            <span class="action-text">Quyền lợi cổ đông</span>
+                            <i class="bi bi-arrow-right action-arrow"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-3">
+                    <div class="method-selection-card" data-target="vonus-benefits-section">
+                        <div class="method-card-header d-flex align-items-center">
+                            <div class="method-card-icon bg-success text-white me-3">
+                                <i class="bi bi-award"></i>
+                            </div>
+                            <h4 class="method-card-title mb-0">Quyền lợi vONUS</h4>
+                        </div>
+                        <p class="method-card-description">
+                            Tìm hiểu về các quyền lợi và lợi ích khi sở hữu điểm vONUS.
+                        </p>
+                        <div class="method-card-action">
+                            <span class="action-text">Chia sẻ lợi nhuận</span>
+                            <i class="bi bi-arrow-right action-arrow"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <div class="row">
+            <!-- ONUS Shares Guide Section -->
+            <div class="row mb-5" id="onus-shares-guide-section">
                 <div class="col-12">
-                    <div class="container">
+                    <div class="method-box">
+                        <div class="method-header d-flex align-items-center mb-3">
+                            <div class="method-icon bg-purple text-white me-3">
+                                <i class="bi bi-share"></i>
+                            </div>
+                            <h3 class="method-title mb-0">Hướng dẫn tham gia ONUS Shares</h3>
+                        </div>
                         
-                        <div class="container my-3">
-                            <div class="alert alert-primary" role="alert">
-                                <h4 class="alert-heading mb-0">Khi tham gia ONUS Shares, người dùng sẽ có quyền biểu quyết cho các quyết định quan trọng, tham gia các chương trình Launchpad, đồng thời nhận chia sẻ 25% lợi nhuận từ nền tảng ONUS thông qua việc sở hữu điểm vONUS.</h4>
-                            </div>
-                            
-                            <h5 class="ms-2 mt-3">Hướng dẫn chi tiết:</h5>
-                            
-                            <div class="container warning-spend py-2">                        
-                                <ul class="step-list">
-                                    <li> <i class="bi bi-check-circle"></i> Truy cập tính năng <span class="fw-bold">ONUS Shares</span>.</li>
-                                    <li> <i class="bi bi-check-circle"></i> Tại màn hình vONUS, kéo xuống phần Pool và xem thông số các Pool.</li>
-                                    <li> <i class="bi bi-check-circle"></i> Chọn Pool mong muốn. Nhấn <span class="fw-bold">Nạp</span>.</li>
-                                    <li> <i class="bi bi-check-circle"></i> Nhập số lượng ONUS muốn nạp. Nhấn <span class="fw-bold">Max</span> để nạp tối đa. Hệ thống sẽ hiển thị thời gian khoá ONUS và số điểm vONUS bạn được nhận về.</li>
-                                    <li> <i class="bi bi-check-circle"></i> Nhấn <span class="fw-bold">Nạp ONUS</span>.</li>
-                                </ul>  
-                            </div>
+                        <div class="alert alert-primary" role="alert">
+                            <h4 class="alert-heading mb-0">Khi tham gia ONUS Shares, người dùng sẽ có quyền biểu quyết cho các quyết định quan trọng, tham gia các chương trình Launchpad, đồng thời nhận chia sẻ 25% lợi nhuận từ nền tảng ONUS thông qua việc sở hữu điểm vONUS.</h4>
                         </div>
 
-                        <div class="illustration-gallery mt-3">
-                            <img src="/assets/img/onus/share.jpg" data-fancybox="onus-share" alt="ONUS Shares"
-                                class="img-fluid mb-3" style="object-fit: contain;width: auto !important; height: 100%; ">
+                        <div class="steps-container">
+                            <ol class="method-steps">
+                                <li>Truy cập tính năng <span class="fw-bold">ONUS Shares</span>.</li>
+                                <li>Tại màn hình vONUS, kéo xuống phần Pool và xem thông số các Pool.</li>
+                                <li>Chọn Pool mong muốn. Nhấn <span class="fw-bold">Nạp</span>.</li>
+                                <li>Nhập số lượng ONUS muốn nạp. Nhấn <span class="fw-bold">Max</span> để nạp tối đa.</li>
+                                <li>Hệ thống sẽ hiển thị thời gian khoá ONUS và số điểm vONUS bạn được nhận về.</li>
+                                <li>Nhấn <span class="fw-bold">Nạp ONUS</span> để hoàn tất.</li>
+                            </ol>
+                        </div>
+
+                        <div class="illustration-gallery mt-4">
+                            <div class="row g-3">
+                                <div class="col-md-12">
+                                    <div class="image-wrapper">
+                                        <img src="/assets/img/onus/share.jpg" alt="Giao diện ONUS Shares" 
+                                             class="img-fluid method-image" data-fancybox="shares-gallery">
+                                        <p class="image-caption">Giao diện ONUS Shares</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- vONUS Benefits Section -->
+            <div class="row mb-5" id="vonus-benefits-section">
+                <div class="col-12">
+                    <div class="method-box">
+                        <div class="method-header d-flex align-items-center mb-3">
+                            <div class="method-icon bg-success text-white me-3">
+                                <i class="bi bi-award"></i>
+                            </div>
+                            <h3 class="method-title mb-0">Quyền lợi khi sở hữu vONUS</h3>
                         </div>
                         
+                        <p class="method-description">
+                            Điểm vONUS mang lại nhiều quyền lợi đặc biệt cho người nắm giữ, từ quyền biểu quyết đến chia sẻ lợi nhuận.
+                        </p>                        <div class="steps-container">
+                            <ol class="method-steps">
+                                <li><span class="fw-bold">Quyền biểu quyết:</span> Tham gia các quyết định quan trọng của nền tảng</li>
+                                <li><span class="fw-bold">Chia sẻ lợi nhuận:</span> Nhận 25% lợi nhuận từ ONUS</li>
+                                <li><span class="fw-bold">Launchpad access:</span> Ưu tiên tham gia các dự án mới</li>
+                                <li><span class="fw-bold">Exclusive features:</span> Truy cập các tính năng độc quyền</li>
+                                <li><span class="fw-bold">Fee discounts:</span> Giảm phí giao dịch trên nền tảng</li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>

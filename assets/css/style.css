@@ -1630,3 +1630,192 @@
 #spot-deposit-section .method-icon {
     background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%) !important;
 }
+
+/* ===== INVESTMENT PAGES SPECIFIC STYLES ===== */
+
+/* Purple color for special features */
+.bg-purple {
+    background-color: #6f42c1 !important;
+}
+
+/* Farming page specific styling */
+.method-selection-card[data-target="farming-guide-section"] {
+    border-color: #28a745;
+}
+
+.method-selection-card[data-target="farming-guide-section"]:hover {
+    border-color: #1e7e34;
+    box-shadow: 0 10px 30px rgba(40, 167, 69, 0.2);
+}
+
+.method-selection-card[data-target="farming-rewards-section"] {
+    border-color: #ffc107;
+}
+
+.method-selection-card[data-target="farming-rewards-section"]:hover {
+    border-color: #e0a800;
+    box-shadow: 0 10px 30px rgba(255, 193, 7, 0.2);
+}
+
+/* Launchpool page specific styling */
+.method-selection-card[data-target="launchpool-guide-section"] {
+    border-color: #17a2b8;
+}
+
+.method-selection-card[data-target="launchpool-guide-section"]:hover {
+    border-color: #138496;
+    box-shadow: 0 10px 30px rgba(23, 162, 184, 0.2);
+}
+
+.method-selection-card[data-target="launchpool-strategy-section"] {
+    border-color: #007bff;
+}
+
+.method-selection-card[data-target="launchpool-strategy-section"]:hover {
+    border-color: #0056b3;
+    box-shadow: 0 10px 30px rgba(0, 123, 255, 0.2);
+}
+
+/* ONUS Shares page specific styling */
+.method-selection-card[data-target="onus-shares-guide-section"] {
+    border-color: #6f42c1;
+}
+
+.method-selection-card[data-target="onus-shares-guide-section"]:hover {
+    border-color: #5a32a3;
+    box-shadow: 0 10px 30px rgba(111, 66, 193, 0.2);
+}
+
+.method-selection-card[data-target="vonus-benefits-section"] {
+    border-color: #28a745;
+}
+
+.method-selection-card[data-target="vonus-benefits-section"]:hover {
+    border-color: #1e7e34;
+    box-shadow: 0 10px 30px rgba(40, 167, 69, 0.2);
+}
+
+/* Staking page specific styling */
+.method-selection-card[data-target="staking-overview-section"] {
+    border-color: #28a745;
+}
+
+.method-selection-card[data-target="staking-overview-section"]:hover {
+    border-color: #1e7e34;
+    box-shadow: 0 10px 30px rgba(40, 167, 69, 0.2);
+}
+
+.method-selection-card[data-target="staking-products-section"] {
+    border-color: #17a2b8;
+}
+
+.method-selection-card[data-target="staking-products-section"]:hover {
+    border-color: #138496;
+    box-shadow: 0 10px 30px rgba(23, 162, 184, 0.2);
+}
+
+/* Investment specific method boxes */
+#farming-guide-section .method-box {
+    border-left: 5px solid #28a745;
+}
+
+#farming-guide-section .method-icon {
+    background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%) !important;
+}
+
+#farming-rewards-section .method-box {
+    border-left: 5px solid #ffc107;
+}
+
+#farming-rewards-section .method-icon {
+    background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%) !important;
+}
+
+#launchpool-guide-section .method-box {
+    border-left: 5px solid #17a2b8;
+}
+
+#launchpool-guide-section .method-icon {
+    background: linear-gradient(135deg, #17a2b8 0%, #138496 100%) !important;
+}
+
+#launchpool-strategy-section .method-box {
+    border-left: 5px solid #007bff;
+}
+
+#launchpool-strategy-section .method-icon {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%) !important;
+}
+
+#onus-shares-guide-section .method-box {
+    border-left: 5px solid #6f42c1;
+}
+
+#onus-shares-guide-section .method-icon {
+    background: linear-gradient(135deg, #6f42c1 0%, #5a32a3 100%) !important;
+}
+
+#vonus-benefits-section .method-box {
+    border-left: 5px solid #28a745;
+}
+
+#vonus-benefits-section .method-icon {
+    background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%) !important;
+}
+
+#staking-overview-section .method-box {
+    border-left: 5px solid #28a745;
+}
+
+#staking-overview-section .method-icon {
+    background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%) !important;
+}
+
+#staking-products-section .method-box {
+    border-left: 5px solid #17a2b8;
+}
+
+#staking-products-section .method-icon {
+    background: linear-gradient(135deg, #17a2b8 0%, #138496 100%) !important;
+}
+
+/* Investment card action text colors */
+.method-selection-card[data-target="farming-guide-section"] .action-text,
+.method-selection-card[data-target="farming-guide-section"] .action-arrow {
+    color: #1e7e34;
+}
+
+.method-selection-card[data-target="farming-rewards-section"] .action-text,
+.method-selection-card[data-target="farming-rewards-section"] .action-arrow {
+    color: #856404;
+}
+
+.method-selection-card[data-target="launchpool-guide-section"] .action-text,
+.method-selection-card[data-target="launchpool-guide-section"] .action-arrow {
+    color: #138496;
+}
+
+.method-selection-card[data-target="launchpool-strategy-section"] .action-text,
+.method-selection-card[data-target="launchpool-strategy-section"] .action-arrow {
+    color: #0056b3;
+}
+
+.method-selection-card[data-target="onus-shares-guide-section"] .action-text,
+.method-selection-card[data-target="onus-shares-guide-section"] .action-arrow {
+    color: #5a32a3;
+}
+
+.method-selection-card[data-target="vonus-benefits-section"] .action-text,
+.method-selection-card[data-target="vonus-benefits-section"] .action-arrow {
+    color: #1e7e34;
+}
+
+.method-selection-card[data-target="staking-overview-section"] .action-text,
+.method-selection-card[data-target="staking-overview-section"] .action-arrow {
+    color: #1e7e34;
+}
+
+.method-selection-card[data-target="staking-products-section"] .action-text,
+.method-selection-card[data-target="staking-products-section"] .action-arrow {
+    color: #138496;
+}

@@ -24,40 +24,111 @@
 
     <div class="hero-instruction text-center">
         <h1 class="hero-title text-light">Hướng dẫn tham gia tính năng Launchpool trên ONUS</h1>
-    </div>
-
-    <!-- Guide Section -->
+    </div>    <!-- Guide Section -->
     <section class="guide" id="guide-section">
         <div class="container">
+            <!-- Method Selection Cards -->
+            <div class="row mb-5">
+                <div class="col-lg-6 mb-3">
+                    <div class="method-selection-card" data-target="launchpool-guide-section">
+                        <div class="method-card-header d-flex align-items-center">
+                            <div class="method-card-icon bg-info text-white me-3">
+                                <i class="bi bi-rocket-takeoff"></i>
+                            </div>
+                            <h4 class="method-card-title mb-0">Launchpool</h4>
+                        </div>
+                        <p class="method-card-description">
+                            Stake ONUS hoặc stablecoin để nhận token mới từ các dự án tiềm năng.
+                        </p>
+                        <div class="method-card-action">
+                            <span class="action-text">Cơ hội đầu tư sớm</span>
+                            <i class="bi bi-arrow-right action-arrow"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-3">
+                    <div class="method-selection-card" data-target="launchpool-strategy-section">
+                        <div class="method-card-header d-flex align-items-center">
+                            <div class="method-card-icon bg-primary text-white me-3">
+                                <i class="bi bi-graph-up"></i>
+                            </div>
+                            <h4 class="method-card-title mb-0">Chiến lược</h4>
+                        </div>
+                        <p class="method-card-description">
+                            Tối ưu hóa lợi nhuận và quản lý rủi ro khi tham gia Launchpool.
+                        </p>
+                        <div class="method-card-action">
+                            <span class="action-text">Tối ưu đầu tư</span>
+                            <i class="bi bi-arrow-right action-arrow"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <div class="row">
+            <!-- Launchpool Guide Section -->
+            <div class="row mb-5" id="launchpool-guide-section">
                 <div class="col-12">
-                    <div class="container">
+                    <div class="method-box">
+                        <div class="method-header d-flex align-items-center mb-3">
+                            <div class="method-icon bg-info text-white me-3">
+                                <i class="bi bi-rocket-takeoff"></i>
+                            </div>
+                            <h3 class="method-title mb-0">Hướng dẫn tham gia Launchpool trên ONUS</h3>
+                        </div>
                         
-                        <div class="container my-3">
-                            <div class="alert alert-primary" role="alert">
-                                <h4 class="alert-heading mb-0">Launchpool là hình thức cho phép người dùng stake ONUS hoặc stablecoin để nhận về token dự án.</h4>
-                            </div>
-                            
-                            <h5 class="ms-2 mt-3">Hướng dẫn chi tiết:</h5>
-                            
-                            <div class="container warning-spend py-2">                        
-                                <ul class="step-list">
-                                    <li> <i class="bi bi-check-circle"></i> Tại màn hình chính ứng dụng ONUS, kéo xuống phần Ứng dụng và chọn <span class="fw-bold">Farming</span>.</li>
-                                    <li> <i class="bi bi-check-circle"></i> Chọn <span class="fw-bold">Launchpool</span> bạn muốn tham gia.</li>
-                                    <li> <i class="bi bi-check-circle"></i> Tại màn hình launchpool, hệ thống sẽ hiển thị thông tin chi tiết của từng pool.</li>
-                                    <li> <i class="bi bi-check-circle"></i> Nhập số lượng ONUS hoặc VNDC muốn tham gia Launchpool.</li>
-                                    <li> <i class="bi bi-check-circle"></i> Nhấn <span class="fw-bold">Nạp</span> hoàn tất.</li>
-                                </ul>  
-                            </div>
+                        <div class="alert alert-primary" role="alert">
+                            <h4 class="alert-heading mb-0">Launchpool là hình thức cho phép người dùng stake ONUS hoặc stablecoin để nhận về token dự án.</h4>
                         </div>
 
-                        <div class="illustration-gallery mt-3">
-                            <img src="/assets/img/onus/launch-pool.png" data-fancybox="launch-pool" alt="Launchpool"
-                                class="img-fluid mb-3">
+                        <div class="steps-container">
+                            <ol class="method-steps">
+                                <li>Tại màn hình chính ứng dụng ONUS, kéo xuống phần Ứng dụng và chọn <span class="fw-bold">Farming</span>.</li>
+                                <li>Chọn <span class="fw-bold">Launchpool</span> bạn muốn tham gia.</li>
+                                <li>Tại màn hình launchpool, hệ thống sẽ hiển thị thông tin chi tiết của từng pool.</li>
+                                <li>Nhập số lượng ONUS hoặc VNDC muốn tham gia Launchpool.</li>
+                                <li>Nhấn <span class="fw-bold">Nạp</span> để hoàn tất.</li>
+                                <li>Theo dõi tiến độ và nhận token mới khi kết thúc.</li>
+                            </ol>
                         </div>
-                        <br>
+
+                        <div class="illustration-gallery mt-4">
+                            <div class="row g-3">
+                                <div class="col-md-12">
+                                    <div class="image-wrapper">
+                                        <img src="/assets/img/onus/launch-pool.png" alt="Giao diện Launchpool" 
+                                             class="img-fluid method-image" data-fancybox="launchpool-gallery">
+                                        <p class="image-caption">Giao diện Launchpool</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Launchpool Strategy Section -->
+            <div class="row mb-5" id="launchpool-strategy-section">
+                <div class="col-12">
+                    <div class="method-box">
+                        <div class="method-header d-flex align-items-center mb-3">
+                            <div class="method-icon bg-primary text-white me-3">
+                                <i class="bi bi-graph-up"></i>
+                            </div>
+                            <h3 class="method-title mb-0">Chiến lược tối ưu Launchpool</h3>
+                        </div>
                         
+                        <p class="method-description">
+                            Để tối ưu hóa lợi nhuận từ Launchpool, bạn cần có chiến lược phù hợp và quản lý rủi ro hiệu quả.
+                        </p>                        <div class="steps-container">
+                            <ol class="method-steps">
+                                <li>Nghiên cứu kỹ về dự án trước khi tham gia</li>
+                                <li>Phân bổ vốn hợp lý giữa các pool khác nhau</li>
+                                <li>Theo dõi tỷ lệ participation và điều chỉnh kịp thời</li>
+                                <li>Cân nhắc về thời điểm tham gia để tối ưu lợi nhuận</li>
+                                <li>Có kế hoạch xử lý token nhận được</li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -94,9 +165,7 @@
             })
             .catch(error => {
                 console.error('Error loading header/footer:', error);
-            });
-
-        // Update padding on resize
+            });        // Update padding on resize
         window.addEventListener('resize', function () {
             const header = document.querySelector('.header');
             const guideSection = document.querySelector('#guide-section');
@@ -104,6 +173,32 @@
                 const headerHeight = header.offsetHeight;
                 guideSection.style.paddingTop = `${headerHeight}px`;
             }
+        });
+
+        // Method selection card click handlers
+        document.addEventListener('DOMContentLoaded', function() {
+            const methodCards = document.querySelectorAll('.method-selection-card');
+            
+            methodCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-target');
+                    const targetSection = document.getElementById(targetId);
+                    
+                    if (targetSection) {
+                        // Smooth scroll to target section
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        
+                        // Add highlight effect
+                        targetSection.classList.add('highlight-section');
+                        setTimeout(() => {
+                            targetSection.classList.remove('highlight-section');
+                        }, 2000);
+                    }
+                });
+            });
         });
     </script>
 </body>
