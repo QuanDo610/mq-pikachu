@@ -81,8 +81,8 @@
 }
 
 .social-img {
-    width: 24px;
-    height: 24px;
+    width: auto;
+    height: auto;
     filter: brightness(0.8);
     transition: filter 0.3s ease;
 }
