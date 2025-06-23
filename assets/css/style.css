@@ -926,7 +926,7 @@
 
 .method-image {
     border-radius: 12px;
-    max-height: 400px;
+    height: auto;
     width: 100%;
     object-fit: contain;
     margin-bottom: 0.75rem;
@@ -1357,7 +1357,6 @@
     color: white;
     font-weight: 700;
     font-size: 1rem;
-    flex-shrink: 0;
 }
 
 /* Override step bullet styling for gui.html to use numbers */
@@ -1527,120 +1526,107 @@
     color: #ef6c00;
 }
 
-/* Highlight effect for sections */
-.highlight-section {
-    animation: highlightPulse 2s ease-in-out;
+/* ===== TRADING PAGES SPECIFIC STYLES ===== */
+
+/* Futures page specific styling */
+.method-selection-card[data-target="futures-guide-section"] {
+    border-color: #28a745;
 }
 
-@keyframes highlightPulse {
-    0% {
-        background-color: transparent;
-        transform: scale(1);
-    }
-    50% {
-        background-color: rgba(0, 123, 255, 0.1);
-        transform: scale(1.02);
-    }
-    100% {
-        background-color: transparent;
-        transform: scale(1);
-    }
+.method-selection-card[data-target="futures-guide-section"]:hover {
+    border-color: #1e7e34;
+    box-shadow: 0 10px 30px rgba(40, 167, 69, 0.2);
 }
 
-/* Responsive Design for Method Selection Cards */
-@media (max-width: 992px) {
-    .method-selection-card {
-        padding: 1.75rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    .method-card-icon {
-        width: 45px;
-        height: 45px;
-        font-size: 1.3rem;
-    }
-    
-    .method-card-title {
-        font-size: 1.2rem;
-    }
-    
-    .method-card-description {
-        font-size: 0.95rem;
-    }
+.method-selection-card[data-target="futures-guide-section"] .method-card-icon.bg-success {
+    background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%) !important;
 }
 
-@media (max-width: 768px) {
-    .method-selection-card {
-        padding: 1.5rem;
-        margin-bottom: 1rem;
-    }
-    
-    .method-card-icon {
-        width: 40px;
-        height: 40px;
-        font-size: 1.2rem;
-    }
-    
-    .method-card-title {
-        font-size: 1.1rem;
-    }
-    
-    .method-card-description {
-        font-size: 0.9rem;
-        margin-bottom: 1.25rem;
-    }
-    
-    .action-text {
-        font-size: 0.85rem;
-    }
-    
-    .action-arrow {
-        font-size: 1.1rem;
-    }
+.method-selection-card[data-target="futures-guide-section"] .action-text,
+.method-selection-card[data-target="futures-guide-section"] .action-arrow {
+    color: #1e7e34;
 }
 
-@media (max-width: 576px) {
-    .method-selection-card {
-        padding: 1.25rem;
-        border-radius: 15px;
-    }
-    
-    .method-card-header {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .method-card-icon {
-        margin-bottom: 0.75rem;
-        margin-right: 0 !important;
-    }
-    
-    .method-card-title {
-        font-size: 1rem;
-        text-align: center;
-    }
-    
-    .method-card-description {
-        font-size: 0.85rem;
-        text-align: center;
-    }
-    
-    .method-card-action {
-        flex-direction: column;
-        text-align: center;
-        gap: 0.5rem;
-    }
+.method-selection-card[data-target="futures-risks-section"] {
+    border-color: #ffc107;
 }
 
-/* Animation effects */
-.method-selection-card {
-    animation: slideInUp 0.6s ease forwards;
+.method-selection-card[data-target="futures-risks-section"]:hover {
+    border-color: #e0a800;
+    box-shadow: 0 10px 30px rgba(255, 193, 7, 0.2);
 }
 
-.method-selection-card:nth-child(1) {
-    animation-delay: 0.1s;
+.method-selection-card[data-target="futures-risks-section"] .action-text,
+.method-selection-card[data-target="futures-risks-section"] .action-arrow {
+    color: #856404;
 }
 
-.method-selection-card:nth-child(2) {
-    animation-delay: 0.2s;
+/* Spot page specific styling */
+.method-selection-card[data-target="spot-trading-section"] {
+    border-color: #007bff;
+}
+
+.method-selection-card[data-target="spot-trading-section"]:hover {
+    border-color: #0056b3;
+    box-shadow: 0 10px 30px rgba(0, 123, 255, 0.2);
+}
+
+.method-selection-card[data-target="spot-trading-section"] .method-card-icon.bg-primary {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%) !important;
+}
+
+.method-selection-card[data-target="spot-trading-section"] .action-text,
+.method-selection-card[data-target="spot-trading-section"] .action-arrow {
+    color: #0056b3;
+}
+
+.method-selection-card[data-target="spot-deposit-section"] {
+    border-color: #28a745;
+}
+
+.method-selection-card[data-target="spot-deposit-section"]:hover {
+    border-color: #1e7e34;
+    box-shadow: 0 10px 30px rgba(40, 167, 69, 0.2);
+}
+
+.method-selection-card[data-target="spot-deposit-section"] .method-card-icon.bg-success {
+    background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%) !important;
+}
+
+.method-selection-card[data-target="spot-deposit-section"] .action-text,
+.method-selection-card[data-target="spot-deposit-section"] .action-arrow {
+    color: #1e7e34;
+}
+
+/* Trading specific method boxes */
+#futures-guide-section .method-box {
+    border-left: 5px solid #28a745;
+}
+
+#futures-guide-section .method-icon {
+    background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%) !important;
+}
+
+#futures-risks-section .method-box {
+    border-left: 5px solid #ffc107;
+}
+
+#futures-risks-section .method-icon {
+    background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%) !important;
+}
+
+#spot-trading-section .method-box {
+    border-left: 5px solid #007bff;
+}
+
+#spot-trading-section .method-icon {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%) !important;
+}
+
+#spot-deposit-section .method-box {
+    border-left: 5px solid #28a745;
+}
+
+#spot-deposit-section .method-icon {
+    background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%) !important;
 }

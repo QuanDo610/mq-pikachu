@@ -24,42 +24,126 @@
 
     <div class="hero-instruction text-center">
         <h1 class="hero-title text-light">Hướng dẫn giao dịch Spot trên ONUS</h1>
-    </div>
-
-    <!-- Guide Section -->
+    </div>    <!-- Guide Section -->
     <section class="guide" id="guide-section">
-        <div class="container">            <div class="row">
+        <div class="container">
+            <!-- Method Selection Cards -->
+            <div class="row mb-5">
+                <div class="col-lg-6 mb-3">
+                    <div class="method-selection-card" data-target="spot-trading-section">
+                        <div class="method-card-header d-flex align-items-center">
+                            <div class="method-card-icon bg-primary text-white me-3">
+                                <i class="bi bi-currency-exchange"></i>
+                            </div>
+                            <h4 class="method-card-title mb-0">Giao dịch Spot</h4>
+                        </div>
+                        <p class="method-card-description">
+                            Giao dịch giao ngay với cơ chế Orderbook, mua bán tài sản số theo giá thị trường.
+                        </p>
+                        <div class="method-card-action">
+                            <span class="action-text">Phù hợp cho người mới bắt đầu</span>
+                            <i class="bi bi-arrow-right action-arrow"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-3">
+                    <div class="method-selection-card" data-target="spot-deposit-section">
+                        <div class="method-card-header d-flex align-items-center">
+                            <div class="method-card-icon bg-success text-white me-3">
+                                <i class="bi bi-wallet2"></i>
+                            </div>
+                            <h4 class="method-card-title mb-0">Nạp tài sản</h4>
+                        </div>
+                        <p class="method-card-description">
+                            Hướng dẫn nạp tiền và tài sản số vào ví Spot để bắt đầu giao dịch.
+                        </p>
+                        <div class="method-card-action">
+                            <span class="action-text">Bước đầu tiên cần thiết</span>
+                            <i class="bi bi-arrow-right action-arrow"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spot Trading Section -->
+            <div class="row mb-5" id="spot-trading-section">
                 <div class="col-12">
-                    <div class="container">
+                    <div class="method-box">
+                        <div class="method-header d-flex align-items-center mb-3">
+                            <div class="method-icon bg-primary text-white me-3">
+                                <i class="bi bi-currency-exchange"></i>
+                            </div>
+                            <h3 class="method-title mb-0">Hướng dẫn giao dịch Spot trên ONUS</h3>
+                        </div>
                         
-                        <div class="container my-3">
-                            <div class="alert alert-primary" role="alert">
-                                <h4 class="alert-heading mb-0">ONUS Spot là nền tảng giao dịch giao ngay, cho phép người dùng mua bán các loại tài sản số theo cơ chế Orderbook</h4>
-                            </div>
-                            
-                            <h5 class="ms-2 mt-3">Hướng dẫn chi tiết:</h5>
-                            
-                            <div class="container warning-spend py-2">                        
-                                <ul class="step-list">
-                                    <li> <i class="bi bi-check-circle"></i> Mở ứng dụng ONUS. Chọn mục <span class="fw-bold">Giao dịch</span> tại góc phải phía dưới màn hình.</li>
-                                    <li> <i class="bi bi-check-circle"></i> Chọn tab <span class="fw-bold">Spot</span></li>
-                                    <li> <i class="bi bi-check-circle"></i> Tại màn hình ONUS Spot, chọn biểu tượng (+).</li>
-                                    <li> <i class="bi bi-check-circle"></i> Chọn <span class="fw-bold">Nạp</span>.</li>
-                                    <li> <i class="bi bi-check-circle"></i> Chọn tài sản bạn muốn nạp và nhập số lượng. Nhấn xác nhận để hoàn tất.</li>
-                                </ul>  
-                            </div>
+                        <div class="alert alert-primary" role="alert">
+                            <h4 class="alert-heading mb-0">ONUS Spot là nền tảng giao dịch giao ngay, cho phép người dùng mua bán các loại tài sản số theo cơ chế Orderbook</h4>
                         </div>
 
-                        <div class="illustration-gallery mt-3">
-                            <img src="/assets/img/onus/nap-spot.png" data-fancybox="spot"
-                                data-src="/assets/img/onus/nap-spot.png" alt="Hướng dẫn Spot - Bước 1"
-                                class="img-fluid mb-3 w-75 object-fit-cover">
-                            <img src="/assets/img/onus/spot-1.png" data-fancybox="spot"
-                                data-src="/assets/img/onus/spot-1.png" alt="Hướng dẫn Spot - Bước 2"
-                                class="img-fluid mb-3 w-50 object-fit-cover">
+                        <div class="steps-container">
+                            <ol class="method-steps">
+                                <li>Mở ứng dụng ONUS. Chọn mục <span class="fw-bold">Giao dịch</span> tại góc phải phía dưới màn hình.</li>
+                                <li>Chọn tab <span class="fw-bold">Spot</span></li>
+                                <li>Chọn cặp giao dịch bạn muốn (ví dụ: BTC/USDT)</li>
+                                <li>Chọn loại lệnh: <span class="fw-bold">Market</span> (lệnh thị trường) hoặc <span class="fw-bold">Limit</span> (lệnh giới hạn)</li>
+                                <li>Nhập số lượng muốn mua/bán</li>
+                                <li>Kiểm tra thông tin và nhấn <span class="fw-bold">Mua</span> hoặc <span class="fw-bold">Bán</span></li>
+                                <li>Xác nhận giao dịch</li>
+                            </ol>
                         </div>
-                        <br>
+
+                        <div class="illustration-gallery mt-4">
+                            <div class="row g-3">
+                                <div class="col-md-12">
+                                    <div class="image-wrapper">
+                                        <img src="/assets/img/onus/spot-1.png" alt="Giao diện Spot" 
+                                             class="img-fluid method-image" data-fancybox="spot-gallery">
+                                        <p class="image-caption">Giao diện Spot</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spot Deposit Section -->
+            <div class="row mb-5" id="spot-deposit-section">
+                <div class="col-12">
+                    <div class="method-box">
+                        <div class="method-header d-flex align-items-center mb-3">
+                            <div class="method-icon bg-success text-white me-3">
+                                <i class="bi bi-wallet2"></i>
+                            </div>
+                            <h3 class="method-title mb-0">Hướng dẫn nạp tài sản vào Spot</h3>
+                        </div>
                         
+                        <p class="method-description">
+                            Trước khi giao dịch, bạn cần nạp tài sản vào ví Spot. Đây là bước quan trọng đầu tiên.
+                        </p>
+
+                        <div class="steps-container">
+                            <ol class="method-steps">
+                                <li>Tại màn hình ONUS Spot, chọn biểu tượng <span class="fw-bold">(+)</span></li>
+                                <li>Chọn <span class="fw-bold">Nạp</span></li>
+                                <li>Chọn tài sản bạn muốn nạp (VNDC, BTC, ETH,...)</li>
+                                <li>Nhập số lượng muốn nạp</li>
+                                <li>Nhấn <span class="fw-bold">Xác nhận</span> để hoàn tất</li>
+                            </ol>
+                        </div>
+
+                        <div class="illustration-gallery mt-4">
+                            <div class="row g-3">
+                                <div class="col-md-12">
+                                    <div class="image-wrapper">
+                                        <img src="/assets/img/onus/nap-spot.png" alt="Nạp tài sản vào Spot" 
+                                             class="img-fluid method-image" data-fancybox="spot-gallery">
+                                        <p class="image-caption">Nạp tài sản vào Spot</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -74,8 +158,7 @@
     <!-- Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
-    <script src="../../../assets/js/main.js"></script>
-    <script>
+    <script src="../../../assets/js/main.js"></script>    <script>
         // Load header and footer, then calculate padding
         Promise.all([
             fetch('/../../../components/header.html').then(response => response.text()),
@@ -106,6 +189,32 @@
                 const headerHeight = header.offsetHeight;
                 guideSection.style.paddingTop = `${headerHeight}px`;
             }
+        });
+
+        // Method selection card click handlers
+        document.addEventListener('DOMContentLoaded', function() {
+            const methodCards = document.querySelectorAll('.method-selection-card');
+            
+            methodCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-target');
+                    const targetSection = document.getElementById(targetId);
+                    
+                    if (targetSection) {
+                        // Smooth scroll to target section
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        
+                        // Add highlight effect
+                        targetSection.classList.add('highlight-section');
+                        setTimeout(() => {
+                            targetSection.classList.remove('highlight-section');
+                        }, 2000);
+                    }
+                });
+            });
         });
     </script>
 </body>
