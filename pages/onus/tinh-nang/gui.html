@@ -21,86 +21,176 @@
 
 <body>
     <!-- Header -->
-    <div id="header-placeholder"></div>
+    <div id="header-placeholder"></div>    <div class="hero-instruction text-center">
+        <h1 class="hero-title text-light">Hướng dẫn cách gửi VNDC trên ONUS</h1>
+    </div>
 
     <!-- Guide Section -->
     <section class="guide" id="guide-section">
         <div class="container">
-
-            <!-- Gửi -->
-            <h2 class="text-center mb-5">Hướng dẫn cách gửi VNDC trên ONUS</h2>
-
-            <div class="row">
-                <div class="col-12">
-                    <div class="step-section">
-
-                        <h3>Cách 1: Gửi Off-chain</h3>
-                        
-
-                        <ol>
-                            <li>Tại màn hình chính, nhấn <span class="fw-bold">Gửi</span> tại mục Tổng tài sản.</li>
-                            <li>Màn hình hiển thị thông tin các tài sản bạn đang sở hữu. Chọn đơn vị tài sản/token muốn gửi.</li>
-                            <li>Chọn <span class="fw-bold">OFF-CHAIN</span>.</li>
-                            <li>Nhập số lượng tài sản/token muốn gửi và nhấn <span class="fw-bold">Tiếp tục</span>.</li>
-                            <li>Nhập thông tin người nhận.</li>
-                            <li>Xác nhận giao dịch và nhấn Gửi.</li>
-                            <li>Xác thực OTP để hoàn thành giao dịch.</li>
-                        </ol>
-
-                        <div class="illustration-gallery">
-                            <img src="/assets/img/onus/offchain-1.jpg" data-fancybox="kyc2-gallery"
-                                data-src="/assets/img/onus/offchain-1.jpg" alt="Hướng dẫn gửi Off-Chain - Bước 1"
-                                class="img-fluid mb-3 w-25 object-fit-cover">
-                            <img src="/assets/img/onus/offchain-2.jpg" data-fancybox="kyc2-gallery"
-                                data-src="/assets/img/onus/offchain-2.jpg" alt="Hướng dẫn gửi Off-Chain - Bước 2"
-                                class="img-fluid mb-3 w-25 object-fit-cover">
-                            <img src="/assets/img/onus/offchain-3.jpg" data-fancybox="kyc2-gallery"
-                                data-src="/assets/img/onus/offchain-3.jpg" alt="Hướng dẫn gửi Off-Chain - Bước 3"
-                                class="img-fluid mb-3 w-25 object-fit-cover">
+            <!-- Method Selection Cards -->
+            <div class="row mb-5">
+                <div class="col-lg-6 mb-3">
+                    <div class="method-selection-card" data-target="offchain-section">
+                        <div class="method-card-header d-flex align-items-center">
+                            <div class="method-card-icon bg-primary text-white me-3">
+                                <i class="bi bi-cloud-arrow-up"></i>
+                            </div>
+                            <h4 class="method-card-title mb-0">Phương thức Off-chain</h4>
                         </div>
-                       
-                        <br>
+                        <p class="method-card-description">
+                            Chuyển VNDC không cần các nhân blockchain, nhanh chóng và không mất phí mạng.
+                        </p>
+                        <div class="method-card-action">
+                            <span class="action-text">Khuyến nghị cho giao dịch nhanh</span>
+                            <i class="bi bi-arrow-right action-arrow"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-3">
+                    <div class="method-selection-card" data-target="onchain-section">
+                        <div class="method-card-header d-flex align-items-center">
+                            <div class="method-card-icon bg-warning text-dark me-3">
+                                <i class="bi bi-diagram-3"></i>
+                            </div>
+                            <h4 class="method-card-title mb-0">Phương thức On-chain</h4>
+                        </div>
+                        <p class="method-card-description">
+                            Chuyển VNDC qua các nhân blockchain, an toàn hơn nhưng chậm hơn.
+                        </p>
+                        <div class="method-card-action">
+                            <span class="action-text">Khuyến nghị cho độ an toàn</span>
+                            <i class="bi bi-arrow-right action-arrow"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phương thức Off-chain -->
+            <div class="row mb-5" id="offchain-section">
+                <div class="col-12">
+                    <div class="method-box">
+                        <div class="method-header d-flex align-items-center mb-3">
+                            <div class="method-icon bg-primary text-white me-3">
+                                <i class="bi bi-cloud-arrow-up"></i>
+                            </div>
+                            <h3 class="method-title mb-0">Phương thức 1: Chuyển khoản Off-chain</h3>
+                        </div>
                         
-                        <h3>Cách 2: Gửi On-chain</h3>
+                        <p class="method-description">
+                            Chuyển VNDC qua mạng nội bộ ONUS, nhanh chóng với phí thấp, 
+                            chỉ áp dụng với các ví nội bộ ONUS với nhau.
+                        </p>
 
-                        <ol>
-                            <li>Tại màn hình chính, nhấn vào <span class="fw-bold">Gửi</span> tại mục Tổng tài sản.</li>
-                            <li>Màn hình hiển thị thông tin ví tài sản, chọn đơn vị tài sản/token muốn gửi.</li>
-                            <li>Chọn mạng lưới muốn gửi<span class="fw-bold"> ON-CHAIN</span>.</li>
-                            <li>Nhập số lượng đơn vị tài sản/token muốn gửi và nhấn <span class="fw-bold">Tiếp tục</span>.</li>
-                            <li>Nhập địa chỉ ví nhận On-chain.</li>
-                            <li>Xác nhận giao dịch và nhấn Gửi.</li>
-                            <li>Xác thực OTP để hoàn thành giao dịch.</li>
-                        </ol>
+                        <div class="steps-container">
+                            <ol class="method-steps">
+                                <li>Mở ứng dụng ONUS và đăng nhập vào tài khoản</li>
+                                <li>Tại màn hình chính, nhấn <span class="fw-bold">Gửi</span></li>
+                                <li>Chọn phương thức chuyển khoản <span class="fw-bold">OFF-CHAIN</span></li>
+                                <li>Nhập số tiền muốn gửi và nhấn vào <span class="fw-bold">Xem trước</span></li>
+                                <li>Xem tra chi tiết giao dịch</li>
+                                <li>Xác thực bằng OTP hoặc sinh trắc học để hoàn tất</li>
+                                <li>Xác nhận hoàn tất giao dịch</li>
+                            </ol>
+                        </div>
 
-                        <div class="illustration-gallery">
-                            <img src="/assets/img/onus/onchain-1.jpg" data-fancybox="kyc2-gallery"
-                                data-src="/assets/img/onus/offchain-1.jpg" alt="Hướng dẫn gửi On-Chain - Bước 1"
-                                class="img-fluid mb-3 w-25 object-fit-cover">
-                            <img src="/assets/img/onus/onchain-2.jpg" data-fancybox="kyc2-gallery"
-                                data-src="/assets/img/onus/offchain-2.jpg" alt="Hướng dẫn gửi On-Chain - Bước 2"
-                                class="img-fluid mb-3 w-25 object-fit-cover">
-                            <img src="/assets/img/onus/offchain-3.jpg" data-fancybox="kyc2-gallery"
-                                data-src="/assets/img/onus/offchain-3.jpg" alt="Hướng dẫn gửi On-Chain - Bước 3"
-                                class="img-fluid mb-3 w-25 object-fit-cover">
+                        <div class="illustration-gallery mt-4">
+                            <div class="row g-3">
+                                <div class="col-md-4">
+                                    <div class="image-wrapper">
+                                        <img src="/assets/img/onus/offchain-1.jpg" alt="Chọn giao dịch" 
+                                             class="img-fluid method-image" data-fancybox="offchain-gallery">
+                                        <p class="image-caption">Chọn giao dịch</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="image-wrapper">
+                                        <img src="/assets/img/onus/offchain-2.jpg" alt="Nhập thông tin người nhận" 
+                                             class="img-fluid method-image" data-fancybox="offchain-gallery">
+                                        <p class="image-caption">Nhập thông tin người nhận</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="image-wrapper">
+                                        <img src="/assets/img/onus/offchain-3.jpg" alt="Xác nhận giao dịch" 
+                                             class="img-fluid method-image" data-fancybox="offchain-gallery">
+                                        <p class="image-caption">Xác nhận giao dịch</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phương thức On-chain -->
+            <div class="row mb-5" id="onchain-section">
+                <div class="col-12">
+                    <div class="method-box">
+                        <div class="method-header d-flex align-items-center mb-3">
+                            <div class="method-icon bg-warning text-dark me-3">
+                                <i class="bi bi-diagram-3"></i>
+                            </div>
+                            <h3 class="method-title mb-0">Phương thức 2: Chuyển khoản On-chain</h3>
+                        </div>
+                        
+                        <p class="method-description">
+                            Chuyển VNDC qua mạng Blockchain, an toàn với mọi loại ví khác, 
+                            phí giao dịch cao hơn và thời gian xử lý lâu hơn.
+                        </p>
+
+                        <div class="steps-container">
+                            <ol class="method-steps">
+                                <li>Mở ứng dụng ONUS và đăng nhập vào tài khoản</li>
+                                <li>Tại màn hình chính, nhấn <span class="fw-bold">Gửi</span></li>
+                                <li>Chọn <span class="fw-bold">ON-CHAIN</span> transfer method</li>
+                                <li>Enter the amount and blockchain address</li>
+                                <li>Review network fees and transaction details</li>
+                                <li>Xác thực bằng OTP hoặc sinh trắc học</li>
+                                <li>Wait for blockchain confirmation</li>
+                            </ol>
+                        </div>
+
+                        <div class="illustration-gallery mt-4">
+                            <div class="row g-3">
+                                <div class="col-md-4">
+                                    <div class="image-wrapper">
+                                        <img src="/assets/img/onus/onchain-1.jpg" alt="Chọn giao dịch" 
+                                             class="img-fluid method-image" data-fancybox="onchain-gallery">
+                                        <p class="image-caption">Chọn giao dịch</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="image-wrapper">
+                                        <img src="/assets/img/onus/onchain-2.jpg" alt="Enter blockchain address" 
+                                             class="img-fluid method-image" data-fancybox="onchain-gallery">
+                                        <p class="image-caption">Enter blockchain address</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="image-wrapper">
+                                        <img src="/assets/img/onus/onchain-2.jpg" alt="Xác nhận giao dịch" 
+                                             class="img-fluid method-image" data-fancybox="onchain-gallery">
+                                        <p class="image-caption">Xác nhận giao dịch</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
+    </section><!-- Footer -->
     <div id="footer-placeholder"></div>
     <!-- Fancy Box -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script>Fancybox.bind("[data-fancybox]", {});</script>  
+    <script>Fancybox.bind("[data-fancybox]", {});</script>
     <!-- Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="../../../assets/js/main.js"></script>
-    <script>
-        // Load header and footer, then calculate padding
+    <script>        // Load header and footer, then calculate padding
         Promise.all([
             fetch('/../../../components/header.html').then(response => response.text()),
             fetch('/../../../components/footer.html').then(response => response.text())
@@ -115,7 +205,7 @@
                 const guideSection = document.querySelector('#guide-section');
                 if (header && guideSection) {
                     const headerHeight = header.offsetHeight;
-                    guideSection.style.paddingTop = `${headerHeight + 50}px`;
+                    guideSection.style.paddingTop = `${headerHeight }px`;
                 }
             })
             .catch(error => {
@@ -128,8 +218,34 @@
             const guideSection = document.querySelector('#guide-section');
             if (header && guideSection) {
                 const headerHeight = header.offsetHeight;
-                guideSection.style.paddingTop = `${headerHeight + 50}px`;
+                guideSection.style.paddingTop = `${headerHeight }px`;
             }
+        });
+
+        // Method selection card click handlers
+        document.addEventListener('DOMContentLoaded', function() {
+            const methodCards = document.querySelectorAll('.method-selection-card');
+            
+            methodCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-target');
+                    const targetSection = document.getElementById(targetId);
+                    
+                    if (targetSection) {
+                        // Smooth scroll to target section
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        
+                        // Add highlight effect
+                        targetSection.classList.add('highlight-section');
+                        setTimeout(() => {
+                            targetSection.classList.remove('highlight-section');
+                        }, 2000);
+                    }
+                });
+            });
         });
     </script>
 </body>

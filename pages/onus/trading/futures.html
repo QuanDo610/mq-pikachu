@@ -19,14 +19,16 @@
     <link rel="stylesheet" href="../../../assets/css/style.css">
 </head>
 
-<body>
-    <!-- Header -->
+<body>    <!-- Header -->
     <div id="header-placeholder"></div>
+
+    <div class="hero-instruction text-center">
+        <h1 class="hero-title text-light">Hướng dẫn giao dịch Futures trên ONUS</h1>
+    </div>
 
     <!-- Guide Section -->
     <section class="guide" id="guide-section">
         <div class="container">
-            <h2 class="text-center mb-5">Hướng dẫn giao dịch Futures trên ONUS </h2>
 
             <div class="row">
                 <div class="col-12">
@@ -45,28 +47,28 @@
                             <li>Cài đặt <span class="fw-bold">Chốt lời/Cắt lỗ.</span></li>
                         </ol>
 
-                        <div class="illustration-gallery mt-3">
+                        <div class="illustration-gallery mt-6">
                             <img src="/assets/img/onus/future-so-du.png" data-fancybox="future"
                                 data-src="/assets/img/onus/future-so-du.png" alt="Hướng dẫn Future - Bước 1"
-                                class="img-fluid mb-3 w-75 object-fit-cover">
+                                class="img-fluid mb-3 w-100">
                             <img src="/assets/img/onus/future-long-short.png" data-fancybox="future"
                                 data-src="/assets/img/onus/future-long-short.png" alt="Hướng dẫn Future - Bước 2"
-                                class="img-fluid mb-3 w-25 object-fit-cover">
+                                class="img-fluid mb-3 w-50">
                             <img src="/assets/img/onus/future-ky-quy.png" data-fancybox="future"
                                 data-src="/assets/img/onus/future-ky-quy.png" alt="Hướng dẫn Future - Bước 3"
-                                class="img-fluid mb-3 w-25 object-fit-cover">
+                                class="img-fluid mb-3 w-50">
                             <img src="/assets/img/onus/future-don-bay.png" data-fancybox="future"
                                 data-src="/assets/img/onus/future-don-bay.png" alt="Hướng dẫn Future - Bước 4"
-                                class="img-fluid mb-3 w-25 object-fit-cover">
+                                class="img-fluid mb-3 w-50">
                             <img src="/assets/img/onus/future-hinh-thuc.png" data-fancybox="future"
                                 data-src="/assets/img/onus/future-hinh-thuc.png" alt="Hướng dẫn Future - Bước 5"
-                                class="img-fluid mb-3 w-25 object-fit-cover">
+                                class="img-fluid mb-3 w-50">
                             <img src="/assets/img/onus/future-kich-thuoc.png" data-fancybox="future"
                                 data-src="/assets/img/onus/future-kich-thuoc.png" alt="Hướng dẫn Future - Bước 6"
-                                class="img-fluid mb-3 w-25 object-fit-cover">
+                                class="img-fluid mb-3 w-50">
                             <img src="/assets/img/onus/chot-lo.png" data-fancybox="future"
                                 data-src="/assets/img/onus/chot-lo.png" alt="Hướng dẫn Future - Bước 7"
-                                class="img-fluid mb-3 w-25 object-fit-cover">
+                                class="img-fluid mb-3 w-50">
                         </div>
                         <br>
                         
@@ -101,7 +103,7 @@
                 const guideSection = document.querySelector('#guide-section');
                 if (header && guideSection) {
                     const headerHeight = header.offsetHeight;
-                    guideSection.style.paddingTop = `${headerHeight + 50}px`;
+                    guideSection.style.paddingTop = `${headerHeight }px`;
                 }
             })
             .catch(error => {
@@ -114,7 +116,7 @@
             const guideSection = document.querySelector('#guide-section');
             if (header && guideSection) {
                 const headerHeight = header.offsetHeight;
-                guideSection.style.paddingTop = `${headerHeight + 50}px`;
+                guideSection.style.paddingTop = `${headerHeight }px`;
             }
         });
     </script>

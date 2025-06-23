@@ -33,13 +33,21 @@
             <!-- Nạp -->
             <div class="row">
                 <div class="col-12">
-                    <div class="container">
-
-                        <h3 class="d-flex align-items-center"> <span class="step-numb numb-way me-2">1</span> Cách 1:
+                    <div class="container">                        <h3 class="d-flex align-items-center"> <span class="step-numb numb-way me-2">1</span> Cách 1:
                             Mua VNDC trực tiếp qua tài khoản ngân hàng</h3>
                         <div class="illustration-gallery mt-3">
                             <img src="/assets/img/onus/mua-VNDC-dtkd.png" alt="Mua VNDC ĐTKD" class="img-fluid mb-3"
                             data-fancybox="spend-gallery">
+                        </div>
+                        <div class="container warning-spend py-2">
+                            <ul class="step-list">
+                                <li> <i class="bi bi-check-circle"></i> Tại màn hình chính, nhấn <span class="fw-bold">Mua</span> tại mục Tổng tài sản.</li>
+                                <li> <i class="bi bi-check-circle"></i> Chọn <span class="fw-bold">VNDC</span> từ danh sách tài sản.</li>
+                                <li> <i class="bi bi-check-circle"></i> Nhập số tiền muốn mua và chọn phương thức thanh toán.</li>
+                                <li> <i class="bi bi-check-circle"></i> Xác nhận thông tin và nhấn <span class="fw-bold">Mua ngay</span>.</li>
+                                <li> <i class="bi bi-check-circle"></i> Thực hiện chuyển khoản theo thông tin hiển thị.</li>
+                                <li> <i class="bi bi-check-circle"></i> VNDC sẽ được nạp vào tài khoản sau khi xác nhận thanh toán.</li>
+                            </ul>
                         </div>
                         <br>
                         <div class="container my-3">
@@ -97,7 +105,7 @@
                 const guideSection = document.querySelector('#guide-section');
                 if (header && guideSection) {
                     const headerHeight = header.offsetHeight;
-                    guideSection.style.paddingTop = `${headerHeight + 50}px`;
+                    guideSection.style.paddingTop = `${headerHeight }px`;
                 }
             })
             .catch(error => {
@@ -110,7 +118,7 @@
             const guideSection = document.querySelector('#guide-section');
             if (header && guideSection) {
                 const headerHeight = header.offsetHeight;
-                guideSection.style.paddingTop = `${headerHeight + 50}px`;
+                guideSection.style.paddingTop = `${headerHeight }px`;
             }
         });
     </script>

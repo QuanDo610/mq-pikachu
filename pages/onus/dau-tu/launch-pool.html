@@ -19,28 +19,38 @@
     <link rel="stylesheet" href="../../../assets/css/style.css">
 </head>
 
-<body>
-    <!-- Header -->
+<body>    <!-- Header -->
     <div id="header-placeholder"></div>
+
+    <div class="hero-instruction text-center">
+        <h1 class="hero-title text-light">Hướng dẫn tham gia tính năng Launchpool trên ONUS</h1>
+    </div>
 
     <!-- Guide Section -->
     <section class="guide" id="guide-section">
         <div class="container">
-            <h2 class="text-center mb-5">Hướng dẫn tham gia tính năng Launchpool trên ONUS</h2>
 
             <div class="row">
                 <div class="col-12">
                     <div class="container">
-
-                        <h3>Launchpool là hình thức cho phép người dùng stake ONUS hoặc stablecoin để nhận về token dự án.</h3>
-
-                        <ol>
-                            <li>Tại màn hình chính ứng dụng ONUS, kéo xuống phần Ứng dụng và chọn Farming.</li>
-                            <li>Chọn Launchpool bạn muốn tham gia.</li>
-                            <li>Tại màn hình launchpool, hệ thống sẽ hiển thị thông tin chi tiết của từng pool.</li>
-                            <li>Nhập số lượng ONUS hoặc VNDC muốn tham gia Launchpool.</li>
-                            <li>Nhấn Nạp hoàn tất.</li>
-                        </ol>
+                        
+                        <div class="container my-3">
+                            <div class="alert alert-primary" role="alert">
+                                <h4 class="alert-heading mb-0">Launchpool là hình thức cho phép người dùng stake ONUS hoặc stablecoin để nhận về token dự án.</h4>
+                            </div>
+                            
+                            <h5 class="ms-2 mt-3">Hướng dẫn chi tiết:</h5>
+                            
+                            <div class="container warning-spend py-2">                        
+                                <ul class="step-list">
+                                    <li> <i class="bi bi-check-circle"></i> Tại màn hình chính ứng dụng ONUS, kéo xuống phần Ứng dụng và chọn <span class="fw-bold">Farming</span>.</li>
+                                    <li> <i class="bi bi-check-circle"></i> Chọn <span class="fw-bold">Launchpool</span> bạn muốn tham gia.</li>
+                                    <li> <i class="bi bi-check-circle"></i> Tại màn hình launchpool, hệ thống sẽ hiển thị thông tin chi tiết của từng pool.</li>
+                                    <li> <i class="bi bi-check-circle"></i> Nhập số lượng ONUS hoặc VNDC muốn tham gia Launchpool.</li>
+                                    <li> <i class="bi bi-check-circle"></i> Nhấn <span class="fw-bold">Nạp</span> hoàn tất.</li>
+                                </ul>  
+                            </div>
+                        </div>
 
                         <div class="illustration-gallery mt-3">
                             <img src="/assets/img/onus/launch-pool.png" data-fancybox="launch-pool" alt="Launchpool"
@@ -79,7 +89,7 @@
                 const guideSection = document.querySelector('#guide-section');
                 if (header && guideSection) {
                     const headerHeight = header.offsetHeight;
-                    guideSection.style.paddingTop = `${headerHeight + 50}px`;
+                    guideSection.style.paddingTop = `${headerHeight}px`;
                 }
             })
             .catch(error => {
@@ -92,7 +102,7 @@
             const guideSection = document.querySelector('#guide-section');
             if (header && guideSection) {
                 const headerHeight = header.offsetHeight;
-                guideSection.style.paddingTop = `${headerHeight + 50}px`;
+                guideSection.style.paddingTop = `${headerHeight}px`;
             }
         });
     </script>

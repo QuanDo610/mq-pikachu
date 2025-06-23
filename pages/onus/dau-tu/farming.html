@@ -19,28 +19,38 @@
     <link rel="stylesheet" href="../../../assets/css/style.css">
 </head>
 
-<body>
-    <!-- Header -->
+<body>    <!-- Header -->
     <div id="header-placeholder"></div>
+
+    <div class="hero-instruction text-center">
+        <h1 class="hero-title text-light">Hướng dẫn cách Farming trên ONUS</h1>
+    </div>
 
     <!-- Guide Section -->
     <section class="guide" id="guide-section">
         <div class="container">
-            <h2 class="text-center mb-5">Hướng dẫn cách Farming trên ONUS</h2>
 
             <div class="row">
                 <div class="col-12">
                     <div class="container">
-
-                        <h3>Tính năng Farming sẽ cung cấp cho bạn những chương trình (Pool) để stake tài sản nhận thưởng với thời hạn và tỷ lệ nhận thưởng khác nhau.</h3>
-
-                        <ol>
-                            <li>Tại màn hình chính, chọn Farming tại mục Ứng dụng.</li>
-                            <li>Tìm pool Farming theo nhu cầu.</li>
-                            <li>Nhấn Nạp để tham gia.</li>
-                            <li>Nhập số lượng muốn tham gia Farming, hệ thống sẽ tự động hiển thị các thông tin cần thiết.</li>
-                            <li>Nhấn Nạp tài sản để tham gia Farming.</li>
-                        </ol>
+                        
+                        <div class="container my-3">
+                            <div class="alert alert-primary" role="alert">
+                                <h4 class="alert-heading mb-0">Tính năng Farming sẽ cung cấp cho bạn những chương trình (Pool) để stake tài sản nhận thưởng với thời hạn và tỷ lệ nhận thưởng khác nhau.</h4>
+                            </div>
+                            
+                            <h5 class="ms-2 mt-3">Hướng dẫn chi tiết:</h5>
+                            
+                            <div class="container warning-spend py-2">                        
+                                <ul class="step-list">
+                                    <li> <i class="bi bi-check-circle"></i> Tại màn hình chính, chọn <span class="fw-bold">Farming</span> tại mục Ứng dụng.</li>
+                                    <li> <i class="bi bi-check-circle"></i> Tìm pool Farming theo nhu cầu.</li>
+                                    <li> <i class="bi bi-check-circle"></i> Nhấn <span class="fw-bold">Nạp</span> để tham gia.</li>
+                                    <li> <i class="bi bi-check-circle"></i> Nhập số lượng muốn tham gia Farming, hệ thống sẽ tự động hiển thị các thông tin cần thiết.</li>
+                                    <li> <i class="bi bi-check-circle"></i> Nhấn <span class="fw-bold">Nạp tài sản</span> để tham gia Farming.</li>
+                                </ul>  
+                            </div>
+                        </div>
 
                         <div class="illustration-gallery mt-3">
                             <img src="/assets/img/onus/farming.png" data-fancybox="farming" alt="Farming"
@@ -80,7 +90,7 @@
                 const guideSection = document.querySelector('#guide-section');
                 if (header && guideSection) {
                     const headerHeight = header.offsetHeight;
-                    guideSection.style.paddingTop = `${headerHeight + 50}px`;
+                    guideSection.style.paddingTop = `${headerHeight}px`;
                 }
             })
             .catch(error => {
@@ -93,7 +103,7 @@
             const guideSection = document.querySelector('#guide-section');
             if (header && guideSection) {
                 const headerHeight = header.offsetHeight;
-                guideSection.style.paddingTop = `${headerHeight + 50}px`;
+                guideSection.style.paddingTop = `${headerHeight}px`;
             }
         });
     </script>

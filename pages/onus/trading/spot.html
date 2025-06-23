@@ -19,33 +19,41 @@
     <link rel="stylesheet" href="../../../assets/css/style.css">
 </head>
 
-<body>
-    <!-- Header -->
+<body>    <!-- Header -->
     <div id="header-placeholder"></div>
+
+    <div class="hero-instruction text-center">
+        <h1 class="hero-title text-light">Hướng dẫn giao dịch Spot trên ONUS</h1>
+    </div>
 
     <!-- Guide Section -->
     <section class="guide" id="guide-section">
-        <div class="container">
-            <h2 class="text-center mb-5">Hướng dẫn giao dịch Spot trên ONUS </h2>
-
-            <div class="row">
+        <div class="container">            <div class="row">
                 <div class="col-12">
                     <div class="container">
-
-                        <h3 class="mb-2">ONUS Spot là nền tảng giao dịch giao ngay, cho phép người dùng mua bán các loại tài sản số theo cơ chế Orderbook</h3>
-
-                        <ol>
-                            <li>Mở ứng dụng ONUS. Chọn mục <span class="fw-bold">Giao dịch</span> tại góc phải phía dưới màn hình.</li>
-                            <li>Chọn tab <span class="fw-bold">Spot</span></li>
-                            <li>Tại màn hình ONUS Spot, chọn biểu tượng (+).</li>
-                            <li>Chọn <span class="fw-bold">Nạp</span>.</li>
-                            <li>Chọn tài sản bạn muốn nạp và nhập số lượng. Nhấn xác nhận để hoàn tất.</li>
-                        </ol>
+                        
+                        <div class="container my-3">
+                            <div class="alert alert-primary" role="alert">
+                                <h4 class="alert-heading mb-0">ONUS Spot là nền tảng giao dịch giao ngay, cho phép người dùng mua bán các loại tài sản số theo cơ chế Orderbook</h4>
+                            </div>
+                            
+                            <h5 class="ms-2 mt-3">Hướng dẫn chi tiết:</h5>
+                            
+                            <div class="container warning-spend py-2">                        
+                                <ul class="step-list">
+                                    <li> <i class="bi bi-check-circle"></i> Mở ứng dụng ONUS. Chọn mục <span class="fw-bold">Giao dịch</span> tại góc phải phía dưới màn hình.</li>
+                                    <li> <i class="bi bi-check-circle"></i> Chọn tab <span class="fw-bold">Spot</span></li>
+                                    <li> <i class="bi bi-check-circle"></i> Tại màn hình ONUS Spot, chọn biểu tượng (+).</li>
+                                    <li> <i class="bi bi-check-circle"></i> Chọn <span class="fw-bold">Nạp</span>.</li>
+                                    <li> <i class="bi bi-check-circle"></i> Chọn tài sản bạn muốn nạp và nhập số lượng. Nhấn xác nhận để hoàn tất.</li>
+                                </ul>  
+                            </div>
+                        </div>
 
                         <div class="illustration-gallery mt-3">
                             <img src="/assets/img/onus/nap-spot.png" data-fancybox="spot"
                                 data-src="/assets/img/onus/nap-spot.png" alt="Hướng dẫn Spot - Bước 1"
-                                class="img-fluid mb-3 w-50 object-fit-cover">
+                                class="img-fluid mb-3 w-75 object-fit-cover">
                             <img src="/assets/img/onus/spot-1.png" data-fancybox="spot"
                                 data-src="/assets/img/onus/spot-1.png" alt="Hướng dẫn Spot - Bước 2"
                                 class="img-fluid mb-3 w-50 object-fit-cover">
@@ -83,7 +91,7 @@
                 const guideSection = document.querySelector('#guide-section');
                 if (header && guideSection) {
                     const headerHeight = header.offsetHeight;
-                    guideSection.style.paddingTop = `${headerHeight + 50}px`;
+                    guideSection.style.paddingTop = `${headerHeight}px`;
                 }
             })
             .catch(error => {
@@ -96,7 +104,7 @@
             const guideSection = document.querySelector('#guide-section');
             if (header && guideSection) {
                 const headerHeight = header.offsetHeight;
-                guideSection.style.paddingTop = `${headerHeight + 50}px`;
+                guideSection.style.paddingTop = `${headerHeight}px`;
             }
         });
     </script>

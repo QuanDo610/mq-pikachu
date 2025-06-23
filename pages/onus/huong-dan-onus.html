@@ -266,18 +266,17 @@
                 <!-- Quy đổi -->
                 <h2 class="text-center mb-5 step-section">Hướng dẫn cách quy đổi tiền tệ trên ONUS</h2>
 
-                <div class="row">
-                    <div class="col-12">
-                        <div class="container">
+                <div class="row">                    <div class="col-12">
+                        <div class="container" style="padding: 2rem 1rem;">
 
-                            <h3>Bạn có thể mua hơn 600 tài sản số khác nhau, hoàn toàn miễn phí giao dịch thông qua tính
+                            <h3 style="font-size: 1.8rem; line-height: 1.4; color: #1976d2; font-weight: bold; margin-bottom: 2rem;">Bạn có thể mua hơn 600 tài sản số khác nhau, hoàn toàn miễn phí giao dịch thông qua tính
                                 năng Quy đổi trên ONUS. Hướng dẫn như sau:</h3>
 
-                            <ol>
-                                <li>Trên màn hình chính, chọn Quy đổi tại mục Ứng dụng.</li>
-                                <li>Tìm kiếm loại tiền tệ muốn quy đổi</li>
-                                <li>Nhập số tiền muốn quy đổi và nhấn vào Xem trước</li>
-                                <li>Nhấn Quy đổi để tiến hành mua</li>
+                            <ol style="font-size: 1.1rem; line-height: 1.6; color: #424242;">
+                                <li style="margin-bottom: 1rem;">Trên màn hình chính, chọn Quy đổi tại mục Ứng dụng.</li>
+                                <li style="margin-bottom: 1rem;">Tìm kiếm loại tiền tệ muốn quy đổi</li>
+                                <li style="margin-bottom: 1rem;">Nhập số tiền muốn quy đổi và nhấn vào Xem trước</li>
+                                <li style="margin-bottom: 1rem;">Nhấn Quy đổi để tiến hành mua</li>
                             </ol>
 
                             <div class="illustration-gallery mt-3">
@@ -352,7 +351,7 @@
                 const guideSection = document.querySelector('#guide-section');
                 if (header && guideSection) {
                     const headerHeight = header.offsetHeight;
-                    guideSection.style.paddingTop = `${headerHeight + 50}px`;
+                    guideSection.style.paddingTop = `${headerHeight}px`;
                 }
             })
             .catch(error => {
@@ -365,7 +364,7 @@
             const guideSection = document.querySelector('#guide-section');
             if (header && guideSection) {
                 const headerHeight = header.offsetHeight;
-                guideSection.style.paddingTop = `${headerHeight + 50}px`;
+                guideSection.style.paddingTop = `${headerHeight}px`;
             }
         });
     </script>

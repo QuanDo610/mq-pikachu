@@ -129,7 +129,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="container step-container" id="recharge-steps">
-                            <h3 class="step-title" id="recharge-title">Xem hướng dẫn thao tác Nạp/Rút VNDC chi tiết</h3>
+                            <h3 class="step-title" id="">Xem hướng dẫn thao tác Nạp/Rút VNDC chi tiết</h3>
                             <ul class="intro-list mb-3" id="recharge-ul">
                                 <li class="fw-semibold">Có 2 cách nạp/rút VNDC tại ONUS như sau:</li>
                                 <li><span class="step-numb">1</span> Nạp/rút trực tiếp qua ONUS</li>
@@ -344,7 +344,7 @@
                 const guideSection = document.querySelector('#guide-section');
                 if (header && guideSection) {
                     const headerHeight = header.offsetHeight;
-                    guideSection.style.paddingTop = `${headerHeight + 50}px`;
+                    guideSection.style.paddingTop = `${headerHeight}px`;
                 }
             })
             .catch(error => {
@@ -357,7 +357,7 @@
             const guideSection = document.querySelector('#guide-section');
             if (header && guideSection) {
                 const headerHeight = header.offsetHeight;
-                guideSection.style.paddingTop = `${headerHeight + 50}px`;
+                guideSection.style.paddingTop = `${headerHeight}px`;
             }
         });
     </script>

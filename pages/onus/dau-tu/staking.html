@@ -19,54 +19,59 @@
     <link rel="stylesheet" href="../../../assets/css/style.css">
 </head>
 
-<body>
-    <!-- Header -->
+<body>    <!-- Header -->
     <div id="header-placeholder"></div>
+
+    <div class="hero-instruction text-center">
+        <h1 class="hero-title text-light">Hướng dẫn cách sử dụng ONUS Staking trên ONUS</h1>
+    </div>
 
     <!-- Guide Section -->
     <section class="guide" id="guide-section">
         <div class="container">
-            <h2 class="text-center mb-5">Hướng dẫn cách sử dụng ONUS Staking trên ONUS</h2>
 
             <div class="row">
                 <div class="col-12">
-                    <div class="container">
-
-                        <h3>ONUS Staking là các tính năng staking được cung cấp trên nền tảng ONUS, nơi người dùng tham
-                            gia “khóa” tài sản số của mình để nhận lãi suất hàng ngày hoặc các phần thưởng hấp dẫn.</h3>
-                        <br>
-                        <h4>Các sản phẩm staking trên ONUS</h4>
-
-                        <ul class="text-decoration-none">
-                            <li> 
-                                <h5>Lãi qua đêm</h5>
-                            </li>
-                            <div class="illustration-gallery mt-3 mb-6">
-                                <img src="/assets/img/onus/lai-kep.png" alt="Lãi qua đêm" data-fancybox="lai-qua-dem"
-                                    class="img-fluid mb-3">
+                    <section class="container">
+                        
+                        <div class="container my-3">
+                            <div class="alert alert-primary" role="alert">
+                                <h4 class="alert-heading mb-0">ONUS Staking là các tính năng staking được cung cấp trên nền tảng ONUS, nơi người dùng tham gia "khóa" tài sản số của mình để nhận lãi suất hàng ngày hoặc các phần thưởng hấp dẫn.</h4>
                             </div>
-                            <li>
-                                <h5>Farming pool</h5>
-                            </li>
-                            <div class="illustration-gallery mt-3 mb-6">
-                                <img src="/assets/img/onus/farming.png" alt="Farming" data-fancybox="farming"
-                                    class="img-fluid mb-3">
+                            
+                            <h5 class="ms-2 mt-3">Các sản phẩm staking trên ONUS:</h5>
+                            
+                            <div class="container warning-spend py-2">                        
+                                <ul class="step-list">
+                                    <li> <i class="bi bi-check-circle"></i> <span class="fw-bold">Lãi qua đêm</span></li>
+                                    <li> <i class="bi bi-check-circle"></i> <span class="fw-bold">Farming pool</span></li>
+                                    <li> <i class="bi bi-check-circle"></i> <span class="fw-bold">ONUS Shares</span></li>
+                                </ul>  
                             </div>
-                            <li>
-                                <h5>ONUS Shares</h5>
-                            </li>
-                            <div class="illustration-gallery mt-3 mb-6">
-                                <img src="/assets/img/onus/share.jpg" alt="ONUS Shares" data-fancybox="onus-share"
-                                    class="img-fluid mb-3">
+                            
+                            <div class="illustration-gallery mt-3">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <img src="/assets/img/onus/lai-kep.png" alt="Lãi qua đêm" data-fancybox="staking-gallery"
+                                            class="img-fluid" style="object-fit: contain; height: auto !important; width: 100%;">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="/assets/img/onus/farming.png" alt="Farming" data-fancybox="staking-gallery"
+                                            class="img-fluid" style="object-fit: contain; height: auto !important; width: 100%;">
+                                    </div>
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-6">
+                                        <img src="/assets/img/onus/share.jpg" alt="ONUS Shares" data-fancybox="staking-gallery"
+                                            class="img-fluid" style="object-fit: contain; height: 300px; width: 100%;">
+                                    </div>
+                                </div>
                             </div>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
+                        </div>
+                        </section>
+               
+                    </div>              
+        <!-- Footer -->
+                </section>
     <div id="footer-placeholder"></div>
     <!-- Fancy Box -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
@@ -91,7 +96,7 @@
                 const guideSection = document.querySelector('#guide-section');
                 if (header && guideSection) {
                     const headerHeight = header.offsetHeight;
-                    guideSection.style.paddingTop = `${headerHeight + 50}px`;
+                    guideSection.style.paddingTop = `${headerHeight }px`;
                 }
             })
             .catch(error => {
@@ -104,7 +109,7 @@
             const guideSection = document.querySelector('#guide-section');
             if (header && guideSection) {
                 const headerHeight = header.offsetHeight;
-                guideSection.style.paddingTop = `${headerHeight + 50}px`;
+                guideSection.style.paddingTop = `${headerHeight }px`;
             }
         });
     </script>

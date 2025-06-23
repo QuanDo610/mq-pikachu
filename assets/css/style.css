@@ -1,7 +1,15 @@
+.img-fluid {
+    object-fit: fill;
+    height: auto !important;
+    width: auto !important;
+}
+
 /* Guide Section */
+
+
 .guide {
     background-color: var(--color-white);
-    padding: 5rem 0 4rem 0;
+    padding: 1rem 0 1rem 0;
     min-height: 60vh;
 }
 
@@ -190,6 +198,7 @@
 #recharge-title {
     padding-left: 1.75rem;
 }
+
 .step-list {
     list-style: none;
 }
@@ -241,7 +250,6 @@
 .illustration-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
     justify-content: center;
     margin-bottom: 2rem;
 }
@@ -318,6 +326,119 @@
     width: 100%;
     background-color: #ffffff;
     padding: 0.5rem;
+}
+
+/* Exchange Step Section */
+.exchange-step-section {
+    margin: 40px 0;
+    padding: 60px 0;
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    border-radius: 20px;
+}
+
+.step-number-large {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: var(--color-primary) !important;
+    color: white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.exchange-step-section h2 {
+    color: #1976d2;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.exchange-step-section .lead {
+    color: #424242;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+
+.features-list .feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.features-list .feature-item i {
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+}
+
+.features-list .feature-item span {
+    color: #424242;
+    font-size: 1rem;
+}
+
+.phone-mockup img {
+    max-width: 550px !important;
+    height: 100% !important;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.phone-mockup img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments for exchange step section */
+@media (max-width: 768px) {
+    .exchange-step-section {
+        padding: 40px 0;
+        margin: 20px 0;
+    }
+    
+    .exchange-step-section h2 {
+        font-size: 2rem;
+    }
+    
+    .step-number-large {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }    .phone-mockup img {
+        max-width: 300px;
+        margin-top: 2rem;
+        transform: scale(1.15) translateY(-30px);
+    }
+    
+    .phone-mockup img:hover {
+        transform: scale(1.18) translateY(-30px);
+    }
+    
+    .features-list {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .exchange-step-section h2 {
+        font-size: 1.75rem;
+    }    .phone-mockup img {
+        max-width: 250px;
+        transform: scale(1.15) translateY(-25px);
+    }
+    
+    .phone-mockup img:hover {
+        transform: scale(1.18) translateY(-25px);
+    }
+    
+    .exchange-step-section .lead {
+        font-size: 1rem;
+    }
 }
 
 /* Responsive Adjustments */
@@ -423,9 +544,1103 @@
     }
 }
 
-/* Liên kết giới thiệu */
-.magioithieu {
-    color: var(--color-accent);
+/* Instruction Box Styling */
+.instruction-box {
+    background: white;
+    border-radius: 20px !important;
+    padding: 3rem !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+    border: 1px solid #e0e0e0 !important;
+    margin: 40px 0;
+}
+
+.instruction-list .step-number {
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: var(--color-primary) !important;
+    color: white !important;
+    flex-shrink: 0;
+}
+
+/* Enhanced Exchange Step Section */
+.exchange-step-section {
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%) !important;
+    padding: 80px 0;
+    margin: 0;
+}
+
+.exchange-step-section .step-number-large {
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: var(--color-primary) !important;
+    color: white !important;
+}
+
+.exchange-step-section h1 {
+    color: #1976d2;
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+/* Currency Cards Enhancement */
+.popular-currencies {
+    background-color: #f8f9fa !important;
+    padding: 4rem 0;
+}
+
+.currency-card {
+    background:#f8f9fa !important;
+}
+
+.currency-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+    background-color: #ffffff !important;
+}
+
+.currency-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.currency-price .price-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.currency-price .price-change {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.price-percentage {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.price-percentage.text-success {
+    color: #28a745 !important;
+}
+
+.price-percentage.text-muted {
+    color: #6c757d !important;
+}
+
+.price-change-percent {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.price-change-percent.text-success {
+    color: #28a745 !important;
+}
+
+.price-change-percent.text-muted {
+    color: #6c757d !important;
+}
+
+/* Phone mockup enhancement */
+.phone-mockup {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.phone-mockup img {
+    max-width: 450px;
+    height: auto;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+    transform: scale(1.15) translateY(-40px);
+    display: block;
+}
+
+.phone-mockup img:hover {
+    transform: scale(1.18) translateY(-40px);
+}
+
+/* Step Box and Detail Boxes */
+.step-box {
+    background: white;
+    border-radius: 20px !important;
+    padding: 1.5rem !important;
+    margin-bottom: 2rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1) !important;
+    border: none !important;
+}
+
+.step-box .step-number-large {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: var(--color-primary) !important;
+    color: white !important;
+    margin-right: 1rem;
+}
+
+.step-box h2 {
+    color: #1976d2;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Gradient Detail Boxes for Quy Doi */
+.detail-box {
+    background: linear-gradient(135deg, #4285f4 0%, #5396ff 100%) !important;
+    color: white !important;
+    border-radius: 20px !important;
+    padding: 1.5rem !important;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+    border: none !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.detail-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(66, 133, 244, 0.3) !important;
+}
+
+.detail-box .d-flex {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-box .fw-bold {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: white;
+    text-align: center;
+}
+
+.detail-box .small {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    line-height: 1.3;
+    color: white;
+    text-align: center;
+}
+
+.detail-box i {
+    color: white !important;
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    opacity: 1;
+    display: block;
+    text-align: center;
+}
+
+/* Responsive for gradient boxes */
+@media (max-width: 768px) {
+    .detail-box {
+        padding: 1rem !important;
+        min-height: 90px;
+    }
+    
+    .detail-box .fw-bold {
+        font-size: 1rem;
+    }
+    
+    .detail-box .small {
+        font-size: 0.85rem;
+    }
+    
+    .detail-box i {
+        font-size: 1.75rem;
+    }
+    
+    .step-box {
+        padding: 1.25rem !important;
+        margin-bottom: 1.5rem;
+    }
+    
+    .step-box h2 {
+        font-size: 2rem;
+    }
+    
+    .step-box .step-number-large {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .detail-box {
+        padding: 0.875rem !important;
+        min-height: 80px;
+    }
+    
+    .detail-box .fw-bold {
+        font-size: 0.95rem;
+    }
+    
+    .detail-box .small {
+        font-size: 0.8rem;
+    }
+    
+    .step-box h2 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Method Box Layout for GUI Page */
+.method-box {
+    background: #ffffff;
+    border: 2px solid #e9ecef;
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.method-box:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+
+.method-header {
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem !important;
+}
+
+.method-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.method-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.method-description {
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid #007bff;
+}
+
+.steps-container {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.method-steps {
+    margin: 0;
+    padding-left: 0;
+    counter-reset: step-counter;
+    list-style: none;
+}
+
+.method-steps li {
+    counter-increment: step-counter;
+    margin-bottom: 1rem;
+    padding-left: 3rem;
+    position: relative;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #495057;
+}
+
+.method-steps li:last-child {
+    margin-bottom: 0;
+}
+
+.method-steps li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.method-steps li .fw-bold {
+    color: #2c3e50;
+    background-color: #e3f2fd;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+.image-wrapper {
+    text-align: center;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.image-wrapper:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+.method-image {
+    border-radius: 12px;
+    max-height: 400px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 0.75rem;
+}
+
+.image-caption {
+    font-size: 0.9rem;
+    color: #6c757d;
+    font-weight: 500;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+/* ===== NHAN.HTML (RECEIVE) PAGE STYLES ===== */
+
+/* Main Interest Card */
+.main-interest-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border: 2px solid #e9ecef;
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.main-interest-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #4caf50 0%, #29b6f6 50%, #ff9800 100%);
+    border-radius: 20px 20px 0 0;
+}
+
+.interest-title {
+    color: var(--color-dark);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+}
+
+/* Steps with bullet points */
+.steps-bullet-list {
+    display: flex;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.step-bullet-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.step-bullet {
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%);
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.step-bullet::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.step-text {
+    font-size: 1.1rem;
+    color: var(--color-dark);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* Feature Cards Grid */
+.feature-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border: 2px solid #e9ecef;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-color: #007bff;
+}
+
+.feature-card-blue {
+    border-color: #007bff;
+}
+
+.feature-card-blue:hover {
+    border-color: #0056b3;
+    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.2);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 1.5rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.feature-title {
+    color: var(--color-dark);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.feature-desc {
+    color: #6c757d;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+    flex-grow: 1;
+}
+
+/* Interest Display Section */
+.interest-display-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    margin-top: 2rem;
+}
+
+.interest-info {
+    padding-right: 2rem;
+}
+
+.interest-main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4caf50;
+    margin-bottom: 0.5rem;
+}
+
+.interest-subtitle {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.interest-description {
+    font-size: 1rem;
+    color: var(--color-dark);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Interest Timeline */
+.interest-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: white;
+    border-radius: 10px;
+    border-left: 4px solid #4caf50;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.timeline-period {
+    font-size: 1rem;
+    color: var(--color-dark);
+    font-weight: 600;
+}
+
+.timeline-amount {
+    font-size: 1.1rem;
+    color: #4caf50;
+    font-weight: 700;
+}
+
+.timeline-amount::after {
+    content: " VNDC";
+    color: #6c757d;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+/* Phone Showcase */
+.phone-showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.phone-mockup-container {
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.phone-mockup-container:hover {
+    transform: scale(1.05);
+}
+
+.phone-app-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    background-color: #EFF6FF;
+    transition: all 0.3s ease;
+}
+
+.phone-app-image:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive Design for nhan.html */
+@media (max-width: 992px) {
+    .interest-title {
+        font-size: 1.75rem;
+    }
+    
+    .interest-info {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+    
+    .interest-main-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .interest-subtitle {
+        text-align: center;
+    }
+    
+    .interest-timeline {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-interest-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .interest-title {
+        font-size: 1.5rem;
+    }
+    
+    .steps-bullet-list {
+        gap: 1rem;
+    }
+    
+    .step-text {
+        font-size: 1rem;
+    }
+    
+    .feature-card {
+        padding: 1.25rem;
+        margin-bottom: 1rem;
+    }
+    
+    .feature-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+    }
+    
+    .feature-title {
+        font-size: 1.1rem;
+    }
+    
+    .feature-desc {
+        font-size: 0.85rem;
+    }
+    
+    .interest-display-section {
+        padding: 2rem 1.5rem;
+    }
+    
+    .interest-main-title {
+        font-size: 1.75rem;
+    }
+    
+    .interest-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .timeline-item {
+        padding: 0.875rem 1.25rem;
+    }
+    
+    .timeline-period {
+        font-size: 0.9rem;
+    }
+    
+    .timeline-amount {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-interest-card {
+        padding: 1.5rem 1rem;
+        margin: 0 0.5rem;
+    }
+    
+    .interest-title {
+        font-size: 1.3rem;
+    }
+    
+    .step-bullet-item {
+        gap: 0.75rem;
+    }
+    
+    .feature-card {
+        padding: 1rem;
+    }
+    
+    .interest-display-section {
+        padding: 1.5rem 1rem;
+        margin: 1rem 0.5rem 0;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    
+    .phone-mockup-container {
+        max-width: 250px;
+    }
+}
+
+/* Animation effects for nhan.html */
+.main-interest-card {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.feature-card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.feature-card:nth-child(1) { animation-delay: 0.1s; }
+.feature-card:nth-child(2) { animation-delay: 0.2s; }
+.feature-card:nth-child(3) { animation-delay: 0.3s; }
+.feature-card:nth-child(4) { animation-delay: 0.4s; }
+
+.interest-display-section {
+    animation: fadeInUp 0.8s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.timeline-item {
+    animation: slideInLeft 0.6s ease forwards;
+}
+
+.timeline-item:nth-child(1) { animation-delay: 0.7s; }
+.timeline-item:nth-child(2) { animation-delay: 0.8s; }
+.timeline-item:nth-child(3) { animation-delay: 0.9s; }
+.timeline-item:nth-child(4) { animation-delay: 1s; }
+
+.phone-mockup-container {
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.6s;
+}
+
+/* ===== GUI.HTML (SEND) PAGE STYLES ===== */
+
+/* Step bullet numbers for gui.html */
+.step-bullet-number {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+/* Override step bullet styling for gui.html to use numbers */
+.main-interest-card .step-bullet-item .step-bullet-number {
+    margin-right: 1rem;
+}
+
+/* Ensure numbered steps in gui.html have proper spacing */
+.main-interest-card .step-bullet-item {
+    align-items: center;
+    padding: 0.75rem 0;
+}
+
+.main-interest-card .step-text {
+    padding-top: 1.25rem;
+}
+
+/* ===== METHOD SELECTION CARDS ===== */
+
+/* Method Selection Card Container */
+.method-selection-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    border: 2px solid #e9ecef;
+    border-radius: 20px;
+    padding: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.method-selection-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent) 100%);
+    border-radius: 20px 20px 0 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.method-selection-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 123, 255, 0.15);
+    border-color: var(--color-primary);
+}
+
+.method-selection-card:hover::before {
+    transform: scaleX(1);
+}
+
+.method-selection-card:active {
+    transform: translateY(-2px);
+}
+
+/* Method Card Header */
+.method-card-header {
+    margin-bottom: 1rem;
+}
+
+.method-card-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.method-selection-card:hover .method-card-icon {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.method-card-title {
+    color: var(--color-dark);
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.3;
+}
+
+/* Method Card Description */
+.method-card-description {
+    color: #6c757d;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+/* Method Card Action */
+.method-card-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    border-top: 1px solid #e9ecef;
+    margin-top: auto;
+}
+
+.action-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    transition: color 0.3s ease;
+}
+
+.action-arrow {
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    transition: all 0.3s ease;
+}
+
+.method-selection-card:hover .action-text,
+.method-selection-card:hover .action-arrow {
+    color: var(--color-accent);
+}
+
+.method-selection-card:hover .action-arrow {
+    transform: translateX(5px);
+}
+
+/* Specific styling for different method types */
+.method-selection-card[data-target="offchain-section"] {
+    border-color: #007bff;
+}
+
+.method-selection-card[data-target="offchain-section"]:hover {
+    border-color: #0056b3;
+    box-shadow: 0 10px 30px rgba(0, 123, 255, 0.2);
+}
+
+.method-selection-card[data-target="offchain-section"] .method-card-icon.bg-primary {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%) !important;
+}
+
+.method-selection-card[data-target="onchain-section"] {
+    border-color: #ffc107;
+}
+
+.method-selection-card[data-target="onchain-section"]:hover {
+    border-color: #ffb700;
+    box-shadow: 0 10px 30px rgba(255, 193, 7, 0.2);
+}
+
+.method-selection-card[data-target="onchain-section"] .method-card-icon.bg-warning {
+    background: linear-gradient(135deg, #ffc107 0%, #ffb700 100%) !important;
+}
+
+.method-selection-card[data-target="onchain-section"] .action-text,
+.method-selection-card[data-target="onchain-section"] .action-arrow {
+    color: #f57c00;
+}
+
+.method-selection-card[data-target="onchain-section"]:hover .action-text,
+.method-selection-card[data-target="onchain-section"]:hover .action-arrow {
+    color: #ef6c00;
+}
+
+/* Highlight effect for sections */
+.highlight-section {
+    animation: highlightPulse 2s ease-in-out;
+}
+
+@keyframes highlightPulse {
+    0% {
+        background-color: transparent;
+        transform: scale(1);
+    }
+    50% {
+        background-color: rgba(0, 123, 255, 0.1);
+        transform: scale(1.02);
+    }
+    100% {
+        background-color: transparent;
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design for Method Selection Cards */
+@media (max-width: 992px) {
+    .method-selection-card {
+        padding: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .method-card-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+    
+    .method-card-title {
+        font-size: 1.2rem;
+    }
+    
+    .method-card-description {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .method-selection-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .method-card-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .method-card-title {
+        font-size: 1.1rem;
+    }
+    
+    .method-card-description {
+        font-size: 0.9rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .action-text {
+        font-size: 0.85rem;
+    }
+    
+    .action-arrow {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .method-selection-card {
+        padding: 1.25rem;
+        border-radius: 15px;
+    }
+    
+    .method-card-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .method-card-icon {
+        margin-bottom: 0.75rem;
+        margin-right: 0 !important;
+    }
+    
+    .method-card-title {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .method-card-description {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+    
+    .method-card-action {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+}
+
+/* Animation effects */
+.method-selection-card {
+    animation: slideInUp 0.6s ease forwards;
+}
+
+.method-selection-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.method-selection-card:nth-child(2) {
+    animation-delay: 0.2s;
 }

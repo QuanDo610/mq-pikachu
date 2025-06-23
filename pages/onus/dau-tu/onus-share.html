@@ -19,32 +19,42 @@
     <link rel="stylesheet" href="../../../assets/css/style.css">
 </head>
 
-<body>
-    <!-- Header -->
+<body>    <!-- Header -->
     <div id="header-placeholder"></div>
+
+    <div class="hero-instruction text-center">
+        <h1 class="hero-title text-light">Hướng dẫn tính năng ONUS Shares trên ONUS</h1>
+    </div>
 
     <!-- Guide Section -->
     <section class="guide" id="guide-section">
         <div class="container">
-            <h2 class="text-center mb-5">Hướng dẫn tính năng ONUS Shares trên ONUS</h2>
 
             <div class="row">
                 <div class="col-12">
                     <div class="container">
-
-                        <h3>Khi tham gia ONUS Shares, người dùng sẽ có quyền biểu quyết cho các quyết định quan trọng, tham gia các chương trình Launchpad, đồng thời nhận chia sẻ 25% lợi nhuận từ nền tảng ONUS thông qua việc sở hữu điểm vONUS.</h3>
-
-                        <ol>
-                            <li>Truy cập tính năng ONUS Shares.</li>
-                            <li>Tại màn hình vONUS, kéo xuống phần Pool và xem thông số các Pool.</li>
-                            <li>Chọn Pool mong muốn. Nhấn Nạp.</li>
-                            <li>Nhập số lượng ONUS muốn nạp. Nhấn Max để nạp tối đa. Hệ thống sẽ hiển thị thời gian khoá ONUS và số điểm vONUS bạn được nhận về.</li>
-                            <li>Nhấn Nạp ONUS.</li>
-                        </ol>
+                        
+                        <div class="container my-3">
+                            <div class="alert alert-primary" role="alert">
+                                <h4 class="alert-heading mb-0">Khi tham gia ONUS Shares, người dùng sẽ có quyền biểu quyết cho các quyết định quan trọng, tham gia các chương trình Launchpad, đồng thời nhận chia sẻ 25% lợi nhuận từ nền tảng ONUS thông qua việc sở hữu điểm vONUS.</h4>
+                            </div>
+                            
+                            <h5 class="ms-2 mt-3">Hướng dẫn chi tiết:</h5>
+                            
+                            <div class="container warning-spend py-2">                        
+                                <ul class="step-list">
+                                    <li> <i class="bi bi-check-circle"></i> Truy cập tính năng <span class="fw-bold">ONUS Shares</span>.</li>
+                                    <li> <i class="bi bi-check-circle"></i> Tại màn hình vONUS, kéo xuống phần Pool và xem thông số các Pool.</li>
+                                    <li> <i class="bi bi-check-circle"></i> Chọn Pool mong muốn. Nhấn <span class="fw-bold">Nạp</span>.</li>
+                                    <li> <i class="bi bi-check-circle"></i> Nhập số lượng ONUS muốn nạp. Nhấn <span class="fw-bold">Max</span> để nạp tối đa. Hệ thống sẽ hiển thị thời gian khoá ONUS và số điểm vONUS bạn được nhận về.</li>
+                                    <li> <i class="bi bi-check-circle"></i> Nhấn <span class="fw-bold">Nạp ONUS</span>.</li>
+                                </ul>  
+                            </div>
+                        </div>
 
                         <div class="illustration-gallery mt-3">
                             <img src="/assets/img/onus/share.jpg" data-fancybox="onus-share" alt="ONUS Shares"
-                                class="img-fluid mb-3">
+                                class="img-fluid mb-3" style="object-fit: contain;width: auto !important; height: 100%; ">
                         </div>
                         
                     </div>
@@ -78,7 +88,7 @@
                 const guideSection = document.querySelector('#guide-section');
                 if (header && guideSection) {
                     const headerHeight = header.offsetHeight;
-                    guideSection.style.paddingTop = `${headerHeight + 50}px`;
+                    guideSection.style.paddingTop = `${headerHeight }px`;
                 }
             })
             .catch(error => {
@@ -91,7 +101,7 @@
             const guideSection = document.querySelector('#guide-section');
             if (header && guideSection) {
                 const headerHeight = header.offsetHeight;
-                guideSection.style.paddingTop = `${headerHeight + 50}px`;
+                guideSection.style.paddingTop = `${headerHeight }px`;
             }
         });
     </script>
