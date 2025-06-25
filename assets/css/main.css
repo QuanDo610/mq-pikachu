@@ -391,6 +391,10 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .hero {
+        margin-top: 60px;
+    }
+
     .hero h1 {
         font-size: 2.5rem;
     }
@@ -398,13 +402,23 @@ footer {
     .hero p {
         font-size: 1.1rem;
     }
+
+    .hero .container .col-lg-6:first-child {
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero .container .col-lg-6:nth-child(2) {
+        position: absolute;
+        bottom: 70%;
+    }
     
     .crypto-icons {
         height: 200px;
         margin-top: 2rem;
     }
     
-    .crypto-icon {
+    /* .crypto-icon {
         width: 60px;
         height: 60px;
         padding: 10px;
@@ -413,15 +427,33 @@ footer {
     .crypto-icon img {
         width: 35px;
         height: 35px;
-    }
+    } */
     
     .feature-item {
         text-align: center;
-        margin-bottom: 3rem;
+        margin-bottom: 3rem !important;
+        flex-direction: column;
+        align-items: center !important;
+    }
+
+    .feature-item .feature-number {
+        margin-bottom: 1.5rem;
     }
     
     .features .row {
         flex-direction: column-reverse;
+    }
+
+    .testimonials .container .row,
+    .team .container .row,
+    .why-choose .container .row {
+        flex-direction: column;
+    }
+
+    .testimonials .container .row .col-md-4,
+    .team .container .row .col-md-4,
+    .why-choose .container .row .col-md-4 {
+        width: 100%;
     }
 }
 
